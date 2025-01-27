@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import Hero from "../components/Hero";
 import Programs from "../components/Programs";
 import Players from "../components/Players";
+import TeamResults from "../components/TeamResults";
 
 const Index = () => {
   useEffect(() => {
@@ -17,6 +18,7 @@ const Index = () => {
     >
       <Hero />
       <Programs />
+      <TeamResults />
       <Players />
     </motion.div>
   );
