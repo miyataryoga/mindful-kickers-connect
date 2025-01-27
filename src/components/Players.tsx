@@ -4,23 +4,23 @@ const players = [
   {
     name: "Takashi Inui",
     position: "Professional Mentor",
-    image: "/placeholder.svg",
+    image: "https://images.unsplash.com/photo-1519389950473-47ba0277781c",
   },
   {
     name: "Shinji Kagawa",
     position: "Guest Coach",
-    image: "/placeholder.svg",
+    image: "https://images.unsplash.com/photo-1605810230434-7631ac76ec81",
   },
   {
     name: "Makoto Hasebe",
     position: "Technical Advisor",
-    image: "/placeholder.svg",
+    image: "https://images.unsplash.com/photo-1517022812141-23620dba5c23",
   },
 ];
 
 const Players = () => {
   return (
-    <section className="py-24 bg-muted">
+    <section className="py-24 bg-background">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <span className="text-primary text-sm font-medium uppercase tracking-wider">

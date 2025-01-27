@@ -42,7 +42,7 @@ const Programs = () => {
             >
               <program.icon className="w-12 h-12 text-primary mb-6" />
               <h3 className="text-xl font-bold mb-4">{program.title}</h3>
-              <p className="text-secondary">{program.description}</p>
+              <p className="text-muted-foreground">{program.description}</p>
             </motion.div>
           ))}
         </div>
