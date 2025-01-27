@@ -1,6 +1,9 @@
 import { motion } from "framer-motion";
+import { useNavigate } from "react-router-dom";
 
 const Hero = () => {
+  const navigate = useNavigate();
+
   return (
     <section className="relative h-screen flex items-center justify-center overflow-hidden bg-muted">
       <div className="absolute inset-0 z-0">
@@ -31,6 +34,7 @@ const Hero = () => {
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
             className="bg-primary text-primary-foreground px-8 py-3 rounded-lg font-medium shadow-lg hover:shadow-xl transition-all duration-300"
+            onClick={() => navigate("/contact")}
           >
             Join Our Academy
           </motion.button>
