@@ -1,9 +1,9 @@
 import { motion } from "framer-motion";
-import { Ball, GraduationCap, Users } from "lucide-react";
+import { GraduationCap, Users } from "lucide-react";
 
 const programs = [
   {
-    icon: Ball,
+    icon: Users,
     title: "Football Excellence",
     description: "Professional training following Japanese football methodology",
   },
