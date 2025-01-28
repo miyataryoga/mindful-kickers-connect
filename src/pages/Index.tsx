@@ -31,7 +31,7 @@ const Index = () => {
           <Tabs defaultValue="hero" className="w-full">
             <TabsList className="grid w-full grid-cols-6">
               <TabsTrigger value="hero" onClick={() => scrollToSection("hero")}>
-                Toki Academy
+                Samurai Academy
               </TabsTrigger>
               <TabsTrigger value="programs" onClick={() => scrollToSection("programs")}>
                 Programs
