@@ -71,12 +71,13 @@ const Hero = () => {
           <span className="inline-block px-4 py-1 mb-4 bg-primary/10 text-black rounded-full text-sm font-medium">
             {translations[language].location}
           </span>
-          <h1 className="text-4xl md:text-6xl font-bold mb-6 tracking-tight">
+          <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold mb-4 tracking-tight">
             {translations[language].title}
-            <br /> 
-            <span className="text-primary">{translations[language].subtitle}</span>
           </h1>
-          <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
+          <p className="text-2xl md:text-3xl font-semibold text-primary mb-6">
+            {translations[language].subtitle}
+          </p>
+          <p className="text-base md:text-lg text-muted-foreground mb-8 max-w-2xl mx-auto">
             {translations[language].description}
           </p>
           <motion.button
