@@ -10,7 +10,7 @@ const translations = {
     programs: [
       {
         title: "Football Excellence",
-        description: "Professional training following Japanese football methodology",
+        description: "Professional training following Japanese and FA football methodology",
       },
       {
         title: "English Education",
