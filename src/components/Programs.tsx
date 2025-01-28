@@ -1,3 +1,4 @@
+import React from "react";
 import { motion } from "framer-motion";
 import { GraduationCap, Users } from "lucide-react";
 import { useTranslation } from "@/contexts/TranslationContext";
