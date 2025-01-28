@@ -61,8 +61,8 @@ const Hero = () => {
               initial={{ scale: 0.8, opacity: 0 }}
               animate={{ scale: 1, opacity: 1 }}
               transition={{ duration: 0.5 }}
-              src="/lovable-uploads/cf52f81a-7fde-4825-872c-8ceb3e3a633d.png"
-              alt="Samurai Academy Logo"
+              src="/lovable-uploads/99c5ad78-bffd-4466-b655-2a24b6b7eb6e.png"
+              alt="Toki Football Club Logo"
               className="w-40 h-40 md:w-48 md:h-48"
             />
           </div>
