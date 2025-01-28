@@ -1,37 +1,90 @@
+import React from "react";
 import { motion } from "framer-motion";
+import { useTranslation } from "@/contexts/TranslationContext";
 
-const players = [
-  {
-    name: "Takashi Inui",
-    position: "Professional Mentor",
-    image: "https://images.unsplash.com/photo-1519389950473-47ba0277781c",
+const translations = {
+  en: {
+    title: "Our Mentors",
+    subtitle: "Learn from the Best",
+    players: [
+      {
+        name: "Takashi Inui",
+        position: "Professional Mentor",
+        image: "https://images.unsplash.com/photo-1519389950473-47ba0277781c",
+      },
+      {
+        name: "Shinji Kagawa",
+        position: "Guest Coach",
+        image: "https://images.unsplash.com/photo-1605810230434-7631ac76ec81",
+      },
+      {
+        name: "Makoto Hasebe",
+        position: "Technical Advisor",
+        image: "https://images.unsplash.com/photo-1517022812141-23620dba5c23",
+      },
+    ]
   },
-  {
-    name: "Shinji Kagawa",
-    position: "Guest Coach",
-    image: "https://images.unsplash.com/photo-1605810230434-7631ac76ec81",
+  ja: {
+    title: "メンター紹介",
+    subtitle: "最高の指導者から学ぶ",
+    players: [
+      {
+        name: "乾 貴士",
+        position: "プロフェッショナルメンター",
+        image: "https://images.unsplash.com/photo-1519389950473-47ba0277781c",
+      },
+      {
+        name: "香川 真司",
+        position: "ゲストコーチ",
+        image: "https://images.unsplash.com/photo-1605810230434-7631ac76ec81",
+      },
+      {
+        name: "長谷部 誠",
+        position: "テクニカルアドバイザー",
+        image: "https://images.unsplash.com/photo-1517022812141-23620dba5c23",
+      },
+    ]
   },
-  {
-    name: "Makoto Hasebe",
-    position: "Technical Advisor",
-    image: "https://images.unsplash.com/photo-1517022812141-23620dba5c23",
-  },
-];
+  de: {
+    title: "Unsere Mentoren",
+    subtitle: "Lernen Sie von den Besten",
+    players: [
+      {
+        name: "Takashi Inui",
+        position: "Professioneller Mentor",
+        image: "https://images.unsplash.com/photo-1519389950473-47ba0277781c",
+      },
+      {
+        name: "Shinji Kagawa",
+        position: "Gasttrainer",
+        image: "https://images.unsplash.com/photo-1605810230434-7631ac76ec81",
+      },
+      {
+        name: "Makoto Hasebe",
+        position: "Technischer Berater",
+        image: "https://images.unsplash.com/photo-1517022812141-23620dba5c23",
+      },
+    ]
+  }
+};
 
 const Players = () => {
+  const { language } = useTranslation();
+  const content = translations[language];
+
   return (
     <section className="py-24 bg-background">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <span className="text-primary text-sm font-medium uppercase tracking-wider">
-            Our Mentors
+            {content.title}
           </span>
           <h2 className="text-3xl md:text-4xl font-bold mt-2">
-            Learn from the Best
+            {content.subtitle}
           </h2>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {players.map((player, index) => (
+          {content.players.map((player, index) => (
             <motion.div
               key={player.name}
               initial={{ opacity: 0, scale: 0.9 }}

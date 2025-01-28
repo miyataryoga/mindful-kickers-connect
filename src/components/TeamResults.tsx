@@ -1,9 +1,71 @@
+import React from "react";
 import { motion } from "framer-motion";
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { ChartBar, Trophy, Calendar, Users, Goal } from "lucide-react";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { useState } from "react";
+import { useTranslation } from "@/contexts/TranslationContext";
+
+const translations = {
+  en: {
+    title: "Performance Metrics",
+    subtitle: "Team Statistics",
+    selectGroup: "Select age group",
+    seasonPerformance: "Season Performance",
+    teamDetails: "Team Details",
+    position: "Position",
+    wins: "Wins",
+    draws: "Draws",
+    losses: "Losses",
+    goalsFor: "GF",
+    goalsAgainst: "GA",
+    topScorer: "Top Scorer",
+    trainingDays: "Training Days",
+    matchesPlayed: "Matches Played",
+    cleanSheets: "Clean Sheets",
+    nextMatch: "Next Match",
+    averageAttendance: "Average Attendance"
+  },
+  ja: {
+    title: "パフォーマンス指標",
+    subtitle: "チーム統計",
+    selectGroup: "年齢グループを選択",
+    seasonPerformance: "シーズン成績",
+    teamDetails: "チーム詳細",
+    position: "順位",
+    wins: "勝",
+    draws: "分",
+    losses: "敗",
+    goalsFor: "得点",
+    goalsAgainst: "失点",
+    topScorer: "得点王",
+    trainingDays: "練習日",
+    matchesPlayed: "試合数",
+    cleanSheets: "クリーンシート",
+    nextMatch: "次の試合",
+    averageAttendance: "平均出席率"
+  },
+  de: {
+    title: "Leistungskennzahlen",
+    subtitle: "Team-Statistiken",
+    selectGroup: "Altersgruppe auswählen",
+    seasonPerformance: "Saisonleistung",
+    teamDetails: "Team-Details",
+    position: "Position",
+    wins: "Siege",
+    draws: "Unentschieden",
+    losses: "Niederlagen",
+    goalsFor: "Tore",
+    goalsAgainst: "Gegentore",
+    topScorer: "Torschützenkönig",
+    trainingDays: "Trainingstage",
+    matchesPlayed: "Gespielte Spiele",
+    cleanSheets: "Zu-Null-Spiele",
+    nextMatch: "Nächstes Spiel",
+    averageAttendance: "Durchschnittliche Anwesenheit"
+  }
+};
 
 const teamResults = [
   {
@@ -78,6 +140,8 @@ const teamResults = [
 
 const TeamResults = () => {
   const [selectedGroup, setSelectedGroup] = useState<string>(teamResults[0].group);
+  const { language } = useTranslation();
+  const content = translations[language];
 
   const selectedTeam = teamResults.find(team => team.group === selectedGroup);
 
@@ -86,9 +150,9 @@ const TeamResults = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <span className="text-primary text-sm font-medium uppercase tracking-wider">
-            Performance Metrics
+            {content.title}
           </span>
-          <h2 className="text-3xl md:text-4xl font-bold mt-2">Team Statistics</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mt-2">{content.subtitle}</h2>
         </div>
 
         <div className="mb-8">
@@ -97,7 +161,7 @@ const TeamResults = () => {
             onValueChange={(value) => setSelectedGroup(value)}
           >
             <SelectTrigger className="w-[180px]">
-              <SelectValue placeholder="Select age group" />
+              <SelectValue placeholder={content.selectGroup} />
             </SelectTrigger>
             <SelectContent>
               {teamResults.map((team) => (
@@ -119,7 +183,7 @@ const TeamResults = () => {
             <CardHeader className="space-y-1">
               <div className="flex items-center gap-2">
                 <ChartBar className="h-5 w-5 text-primary" />
-                <CardTitle>Season Performance</CardTitle>
+                <CardTitle>{content.seasonPerformance}</CardTitle>
               </div>
             </CardHeader>
             <CardContent>
@@ -127,12 +191,12 @@ const TeamResults = () => {
                 <TableHeader>
                   <TableRow>
                     <TableHead>Age Group</TableHead>
-                    <TableHead className="text-right">Position</TableHead>
-                    <TableHead className="text-right">Wins</TableHead>
-                    <TableHead className="text-right">Draws</TableHead>
-                    <TableHead className="text-right">Losses</TableHead>
-                    <TableHead className="text-right">GF</TableHead>
-                    <TableHead className="text-right">GA</TableHead>
+                    <TableHead className="text-right">{content.position}</TableHead>
+                    <TableHead className="text-right">{content.wins}</TableHead>
+                    <TableHead className="text-right">{content.draws}</TableHead>
+                    <TableHead className="text-right">{content.losses}</TableHead>
+                    <TableHead className="text-right">{content.goalsFor}</TableHead>
+                    <TableHead className="text-right">{content.goalsAgainst}</TableHead>
                   </TableRow>
                 </TableHeader>
                 <TableBody>
@@ -168,37 +232,37 @@ const TeamResults = () => {
               <CardHeader className="space-y-1">
                 <div className="flex items-center gap-2">
                   <Users className="h-5 w-5 text-primary" />
-                  <CardTitle>Team Details</CardTitle>
+                  <CardTitle>{content.teamDetails}</CardTitle>
                 </div>
               </CardHeader>
               <CardContent className="space-y-4">
                 <div className="grid gap-4">
                   <div className="flex items-center gap-2">
                     <Goal className="h-4 w-4 text-primary" />
-                    <span className="font-medium">Top Scorer:</span>
+                    <span className="font-medium">{content.topScorer}:</span>
                     <span>{selectedTeam.details.topScorer}</span>
                   </div>
                   <div className="flex items-center gap-2">
                     <Calendar className="h-4 w-4 text-primary" />
-                    <span className="font-medium">Training Days:</span>
+                    <span className="font-medium">{content.trainingDays}:</span>
                     <span>{selectedTeam.details.trainingDays}</span>
                   </div>
                   <div className="grid grid-cols-2 gap-4">
                     <div>
-                      <span className="font-medium">Matches Played:</span>
+                      <span className="font-medium">{content.matchesPlayed}:</span>
                       <p className="text-2xl font-bold text-primary">{selectedTeam.details.matchesPlayed}</p>
                     </div>
                     <div>
-                      <span className="font-medium">Clean Sheets:</span>
+                      <span className="font-medium">{content.cleanSheets}:</span>
                       <p className="text-2xl font-bold text-primary">{selectedTeam.details.cleanSheets}</p>
                     </div>
                   </div>
                   <div>
-                    <span className="font-medium">Next Match:</span>
+                    <span className="font-medium">{content.nextMatch}:</span>
                     <p className="text-sm text-muted-foreground">{selectedTeam.details.nextMatch}</p>
                   </div>
                   <div>
-                    <span className="font-medium">Average Attendance:</span>
+                    <span className="font-medium">{content.averageAttendance}:</span>
                     <p className="text-sm text-primary font-medium">{selectedTeam.details.averageAttendance}</p>
                   </div>
                 </div>
