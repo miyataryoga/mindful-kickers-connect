@@ -1,7 +1,7 @@
 import React from "react";
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Trophy } from "lucide-react";
+import { Trophy, Medal } from "lucide-react";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { useTranslation } from "@/contexts/TranslationContext";
 import { useIsMobile } from "@/hooks/use-mobile";
@@ -51,6 +51,9 @@ const SimpleTeamResults = () => {
     <section className="py-12 md:py-24 bg-muted">
       <div className="container mx-auto px-4">
         <div className="text-center mb-8 md:mb-16">
+          <div className="flex items-center justify-center gap-2 mb-4">
+            <Medal className="h-8 w-8 text-primary" />
+          </div>
           <span className="text-primary text-sm font-medium uppercase tracking-wider">
             Latest Results
           </span>
@@ -58,9 +61,13 @@ const SimpleTeamResults = () => {
         </div>
 
         <Tabs defaultValue="U6" className="w-full" onValueChange={setSelectedGroup}>
-          <TabsList className={`grid w-full ${isMobile ? 'grid-cols-2 gap-2' : 'grid-cols-4'}`}>
+          <TabsList className="grid w-full grid-cols-2 md:grid-cols-4 gap-2">
             {Object.keys(teamResults).map((group) => (
-              <TabsTrigger key={group} value={group} className="px-2 py-1.5 text-sm md:text-base">
+              <TabsTrigger 
+                key={group} 
+                value={group} 
+                className="px-2 py-1.5 text-sm md:text-base font-medium"
+              >
                 {group}
               </TabsTrigger>
             ))}
