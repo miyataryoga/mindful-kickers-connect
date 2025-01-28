@@ -11,10 +11,10 @@ const translations = {
     subtitle: "Meet the Team Behind Our Success",
     staff: [
       {
-        name: "John Smith",
-        position: "Head Coach",
+        name: "Hakuto Kondo",
+        position: "Representative",
         image: "https://images.unsplash.com/photo-1581092795360-fd1ca04f0952",
-        bio: "Former professional player with over 15 years of coaching experience"
+        bio: "A visionary leader with a proven track record in sports management. With over a decade of experience in developing elite athletes, Hakuto brings innovative training methodologies and a deep understanding of both Eastern and Western sporting philosophies."
       },
       {
         name: "Sarah Johnson",
@@ -35,10 +35,10 @@ const translations = {
     subtitle: "成功を支えるチーム",
     staff: [
       {
-        name: "ジョン・スミス",
-        position: "ヘッドコーチ",
+        name: "近藤白兎",
+        position: "代表",
         image: "https://images.unsplash.com/photo-1581092795360-fd1ca04f0952",
-        bio: "15年以上のコーチング経験を持つ元プロ選手"
+        bio: "スポーツマネジメントにおける先見性のあるリーダー。エリートアスリートの育成に10年以上の経験を持ち、東洋と西洋のスポーツ哲学への深い理解と革新的なトレーニング方法論を提供しています。"
       },
       {
         name: "サラ・ジョンソン",
@@ -59,10 +59,10 @@ const translations = {
     subtitle: "Lernen Sie das Team hinter unserem Erfolg kennen",
     staff: [
       {
-        name: "John Smith",
-        position: "Cheftrainer",
+        name: "Hakuto Kondo",
+        position: "Repräsentant",
         image: "https://images.unsplash.com/photo-1581092795360-fd1ca04f0952",
-        bio: "Ehemaliger Profispieler mit über 15 Jahren Trainererfahrung"
+        bio: "Ein visionärer Führungskraft mit nachgewiesener Erfolgsbilanz im Sportmanagement. Mit über einem Jahrzehnt Erfahrung in der Entwicklung von Elitesportlern bringt Hakuto innovative Trainingsmethoden und ein tiefes Verständnis sowohl östlicher als auch westlicher Sportphilosophien mit."
       },
       {
         name: "Sarah Johnson",
