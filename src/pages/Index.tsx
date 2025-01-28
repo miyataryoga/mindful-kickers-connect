@@ -30,12 +30,8 @@ const Index = () => {
         <div className="container mx-auto px-4 py-2">
           <Tabs defaultValue="hero" className="w-full">
             <TabsList className="grid w-full grid-cols-6">
-              <TabsTrigger value="hero" onClick={() => scrollToSection("hero")} className="flex items-center justify-center">
-                <img
-                  src="/lovable-uploads/99c5ad78-bffd-4466-b655-2a24b6b7eb6e.png"
-                  alt="Toki Football Club Logo"
-                  className="w-8 h-8"
-                />
+              <TabsTrigger value="hero" onClick={() => scrollToSection("hero")}>
+                Home
               </TabsTrigger>
               <TabsTrigger value="programs" onClick={() => scrollToSection("programs")}>
                 Programs
