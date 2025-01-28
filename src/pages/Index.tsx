@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import Hero from "../components/Hero";
 import Programs from "../components/Programs";
 import Players from "../components/Players";
-import TeamResults from "../components/TeamResults";
+import SimpleTeamResults from "../components/SimpleTeamResults";
 import PricingPlans from "../components/PricingPlans";
 import News from "../components/News";
 import Principles from "../components/Principles";
@@ -67,7 +67,7 @@ const Index = () => {
         <Programs />
       </div>
       <div id="results">
-        <TeamResults />
+        <SimpleTeamResults />
       </div>
       <div id="news">
         <News />
