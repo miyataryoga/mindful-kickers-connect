@@ -7,6 +7,7 @@ import SimpleTeamResults from "../components/SimpleTeamResults";
 import PricingPlans from "../components/PricingPlans";
 import News from "../components/News";
 import Principles from "../components/Principles";
+import Staff from "../components/Staff";
 import { Tabs, TabsList, TabsTrigger } from "@/components/ui/tabs";
 
 const Index = () => {
@@ -30,7 +31,7 @@ const Index = () => {
       <div className="sticky top-0 z-50 bg-background/80 backdrop-blur-sm border-b">
         <div className="container mx-auto px-4 py-2">
           <Tabs defaultValue="hero" className="w-full">
-            <TabsList className="grid w-full grid-cols-7">
+            <TabsList className="grid w-full grid-cols-8">
               <TabsTrigger value="hero" onClick={() => scrollToSection("hero")}>
                 Home
               </TabsTrigger>
@@ -51,6 +52,9 @@ const Index = () => {
               </TabsTrigger>
               <TabsTrigger value="mentors" onClick={() => scrollToSection("mentors")}>
                 Mentors
+              </TabsTrigger>
+              <TabsTrigger value="staff" onClick={() => scrollToSection("staff")}>
+                Staff
               </TabsTrigger>
             </TabsList>
           </Tabs>
@@ -77,6 +81,9 @@ const Index = () => {
       </div>
       <div id="mentors">
         <Players />
+      </div>
+      <div id="staff">
+        <Staff />
       </div>
     </motion.div>
   );
