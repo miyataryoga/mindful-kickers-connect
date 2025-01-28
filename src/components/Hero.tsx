@@ -54,18 +54,20 @@ const Hero = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
-          className="text-center"
+          className="text-center relative"
         >
-          <div className="flex justify-center mb-8">
-            <motion.img
-              initial={{ scale: 0.8, opacity: 0 }}
-              animate={{ scale: 1, opacity: 1 }}
-              transition={{ duration: 0.5 }}
+          <motion.div
+            initial={{ scale: 0.8, opacity: 0 }}
+            animate={{ scale: 1, opacity: 1 }}
+            transition={{ duration: 0.5 }}
+            className="absolute top-[-100px] left-0"
+          >
+            <img
               src="/lovable-uploads/99c5ad78-bffd-4466-b655-2a24b6b7eb6e.png"
               alt="Toki Football Club Logo"
-              className="w-40 h-40 md:w-48 md:h-48"
+              className="w-56 h-56 md:w-64 md:h-64"
             />
-          </div>
+          </motion.div>
           <span className="inline-block px-4 py-1 mb-4 bg-primary/10 text-black rounded-full text-sm font-medium">
             {translations[language].location}
           </span>
