@@ -35,8 +35,8 @@ const Hero = () => {
     <section className="relative h-screen flex items-center justify-center overflow-hidden bg-muted">
       <div className="absolute inset-0 z-0">
         <img
-          src="https://images.unsplash.com/photo-1605810230434-7631ac76ec81"
-          alt="Football academy"
+          src="/lovable-uploads/dfa21cda-c7b9-4bba-b161-4bad2e0672f0.png"
+          alt="Japanese temple with cherry blossoms"
           className="w-full h-full object-cover opacity-30"
         />
       </div>
