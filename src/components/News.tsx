@@ -7,7 +7,7 @@ import { useTranslation } from "@/contexts/TranslationContext";
 const translations = {
   en: {
     latestUpdates: "Latest Updates",
-    academyNews: "Academy News",
+    academyNews: "[Example] Academy News",
     news: [
       {
         title: "Summer Training Camp Registration Open",
@@ -31,7 +31,7 @@ const translations = {
   },
   ja: {
     latestUpdates: "最新情報",
-    academyNews: "アカデミーニュース",
+    academyNews: "[例] アカデミーニュース",
     news: [
       {
         title: "夏季トレーニングキャンプの登録開始",
@@ -55,7 +55,7 @@ const translations = {
   },
   de: {
     latestUpdates: "Neueste Updates",
-    academyNews: "Akademie-Nachrichten",
+    academyNews: "[Beispiel] Akademie-Nachrichten",
     news: [
       {
         title: "Anmeldung für Sommertrainingslager geöffnet",
