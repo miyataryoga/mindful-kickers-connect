@@ -2,8 +2,10 @@ import React from "react";
 import { motion } from "framer-motion";
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { ChartBar, Trophy, Calendar, Users, Goal } from "lucide-react";
+import { ChartBar, Trophy, Calendar, Users, Goal, ArrowRight } from "lucide-react";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
+import { Button } from "@/components/ui/button";
+import { useNavigate } from "react-router-dom";
 import { useState } from "react";
 import { useTranslation } from "@/contexts/TranslationContext";
 
@@ -142,6 +144,7 @@ const TeamResults = () => {
   const [selectedGroup, setSelectedGroup] = useState<string>(teamResults[0].group);
   const { language } = useTranslation();
   const content = translations[language];
+  const navigate = useNavigate();
 
   const selectedTeam = teamResults.find(team => team.group === selectedGroup);
 
@@ -155,7 +158,7 @@ const TeamResults = () => {
           <h2 className="text-3xl md:text-4xl font-bold mt-2">{content.subtitle}</h2>
         </div>
 
-        <div className="mb-8">
+        <div className="mb-8 flex justify-between items-center">
           <Select
             value={selectedGroup}
             onValueChange={(value) => setSelectedGroup(value)}
@@ -171,6 +174,15 @@ const TeamResults = () => {
               ))}
             </SelectContent>
           </Select>
+          
+          <Button
+            onClick={() => navigate('/results')}
+            variant="outline"
+            className="gap-2"
+          >
+            View All Results
+            <ArrowRight className="h-4 w-4" />
+          </Button>
         </div>
 
         <motion.div
