@@ -5,7 +5,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { ChartBar, Trophy, Calendar, Users, Goal, ArrowRight } from "lucide-react";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Button } from "@/components/ui/button";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useLocation } from "react-router-dom";
 import { useState } from "react";
 import { useTranslation } from "@/contexts/TranslationContext";
 
@@ -145,6 +145,8 @@ const TeamResults = () => {
   const { language } = useTranslation();
   const content = translations[language];
   const navigate = useNavigate();
+  const location = useLocation();
+  const isResultsPage = location.pathname === '/results';
 
   const selectedTeam = teamResults.find(team => team.group === selectedGroup);
 
@@ -175,14 +177,16 @@ const TeamResults = () => {
             </SelectContent>
           </Select>
           
-          <Button
-            onClick={() => navigate('/results')}
-            variant="outline"
-            className="gap-2"
-          >
-            View All Results
-            <ArrowRight className="h-4 w-4" />
-          </Button>
+          {!isResultsPage && (
+            <Button
+              onClick={() => navigate('/results')}
+              variant="outline"
+              className="gap-2"
+            >
+              View All Results
+              <ArrowRight className="h-4 w-4" />
+            </Button>
+          )}
         </div>
 
         <motion.div
@@ -212,27 +216,52 @@ const TeamResults = () => {
                   </TableRow>
                 </TableHeader>
                 <TableBody>
-                  {selectedTeam && (
-                    <TableRow>
-                      <TableCell className="font-medium">
-                        <div className="flex items-center gap-2">
-                          {selectedTeam.position === 1 && <Trophy className="h-4 w-4 text-primary" />}
-                          {selectedTeam.group}
-                        </div>
-                      </TableCell>
-                      <TableCell className="text-right">
-                        <span className={`px-2 py-1 rounded-full text-xs font-medium ${
-                          selectedTeam.position === 1 ? 'bg-primary/10 text-primary' : 'bg-muted'
-                        }`}>
-                          {selectedTeam.position}º
-                        </span>
-                      </TableCell>
-                      <TableCell className="text-right">{selectedTeam.wins}</TableCell>
-                      <TableCell className="text-right">{selectedTeam.draws}</TableCell>
-                      <TableCell className="text-right">{selectedTeam.losses}</TableCell>
-                      <TableCell className="text-right font-medium text-primary">{selectedTeam.goalsFor}</TableCell>
-                      <TableCell className="text-right text-muted-foreground">{selectedTeam.goalsAgainst}</TableCell>
-                    </TableRow>
+                  {isResultsPage ? (
+                    teamResults.map((team) => (
+                      <TableRow key={team.group}>
+                        <TableCell className="font-medium">
+                          <div className="flex items-center gap-2">
+                            {team.position === 1 && <Trophy className="h-4 w-4 text-primary" />}
+                            {team.group}
+                          </div>
+                        </TableCell>
+                        <TableCell className="text-right">
+                          <span className={`px-2 py-1 rounded-full text-xs font-medium ${
+                            team.position === 1 ? 'bg-primary/10 text-primary' : 'bg-muted'
+                          }`}>
+                            {team.position}º
+                          </span>
+                        </TableCell>
+                        <TableCell className="text-right">{team.wins}</TableCell>
+                        <TableCell className="text-right">{team.draws}</TableCell>
+                        <TableCell className="text-right">{team.losses}</TableCell>
+                        <TableCell className="text-right font-medium text-primary">{team.goalsFor}</TableCell>
+                        <TableCell className="text-right text-muted-foreground">{team.goalsAgainst}</TableCell>
+                      </TableRow>
+                    ))
+                  ) : (
+                    selectedTeam && (
+                      <TableRow>
+                        <TableCell className="font-medium">
+                          <div className="flex items-center gap-2">
+                            {selectedTeam.position === 1 && <Trophy className="h-4 w-4 text-primary" />}
+                            {selectedTeam.group}
+                          </div>
+                        </TableCell>
+                        <TableCell className="text-right">
+                          <span className={`px-2 py-1 rounded-full text-xs font-medium ${
+                            selectedTeam.position === 1 ? 'bg-primary/10 text-primary' : 'bg-muted'
+                          }`}>
+                            {selectedTeam.position}º
+                          </span>
+                        </TableCell>
+                        <TableCell className="text-right">{selectedTeam.wins}</TableCell>
+                        <TableCell className="text-right">{selectedTeam.draws}</TableCell>
+                        <TableCell className="text-right">{selectedTeam.losses}</TableCell>
+                        <TableCell className="text-right font-medium text-primary">{selectedTeam.goalsFor}</TableCell>
+                        <TableCell className="text-right text-muted-foreground">{selectedTeam.goalsAgainst}</TableCell>
+                      </TableRow>
+                    )
                   )}
                 </TableBody>
               </Table>
