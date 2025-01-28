@@ -23,10 +23,10 @@ const translations = {
         bio: "An elite UEFA Pro licensed coach with a remarkable track record of nurturing young talent into professional stars. His innovative training methods and deep understanding of modern football have transformed countless players, while his leadership style creates an environment where excellence thrives."
       },
       {
-        name: "David Williams",
+        name: "Ryan Miyata",
         position: "Performance Analyst",
         image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d",
-        bio: "Sports science graduate with expertise in performance analysis"
+        bio: "A pioneering force in sports analytics, combining cutting-edge technology with deep tactical understanding. His innovative approach to performance analysis has revolutionized training methodologies and player development, leading to significant improvements in both individual and team performance metrics."
       }
     ]
   },
@@ -47,10 +47,10 @@ const translations = {
         bio: "UEFA プロライセンスを持つエリートコーチとして、若い才能をプロフェッショナルな選手へと育成してきた輝かしい実績を持つ。革新的なトレーニング方法と現代サッカーへの深い理解により、数多くの選手を変革し、卓越性が育つ環境づくりにおいても優れたリーダーシップを発揮している。"
       },
       {
-        name: "デビッド・ウィリアムス",
+        name: "ライアン・ミヤタ",
         position: "パフォーマンスアナリスト",
         image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d",
-        bio: "パフォーマンス分析の専門知識を持つスポーツ科学の卒業生"
+        bio: "スポーツアナリティクスの先駆者として、最先端のテクノロジーと戦術的な深い理解を組み合わせる。革新的なパフォーマンス分析アプローチにより、トレーニング方法論と選手育成を革新し、個人とチームの両方のパフォーマンス指標で顕著な向上を実現している。"
       }
     ]
   },
@@ -71,10 +71,10 @@ const translations = {
         bio: "Ein Elite-UEFA-Pro-lizenzierter Trainer mit einer bemerkenswerten Erfolgsbilanz in der Entwicklung junger Talente zu Profistars. Seine innovativen Trainingsmethoden und sein tiefes Verständnis des modernen Fußballs haben unzählige Spieler transformiert, während sein Führungsstil ein Umfeld schafft, in dem Exzellenz gedeiht."
       },
       {
-        name: "David Williams",
+        name: "Ryan Miyata",
         position: "Leistungsanalytiker",
         image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d",
-        bio: "Sportwissenschaftler mit Expertise in Leistungsanalyse"
+        bio: "Eine Pionierkraft in der Sportanalytik, die modernste Technologie mit tiefem taktischem Verständnis verbindet. Sein innovativer Ansatz zur Leistungsanalyse hat Trainingsmethoden und Spielerentwicklung revolutioniert und zu signifikanten Verbesserungen sowohl der individuellen als auch der Team-Leistungsmetriken geführt."
       }
     ]
   }
