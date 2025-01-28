@@ -17,10 +17,10 @@ const translations = {
         bio: "A visionary leader with a proven track record in sports management. With over a decade of experience in developing elite athletes, Hakuto brings innovative training methodologies and a deep understanding of both Eastern and Western sporting philosophies."
       },
       {
-        name: "Sarah Johnson",
-        position: "Technical Director",
+        name: "Matthew Freeman",
+        position: "Head Coach",
         image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158",
-        bio: "UEFA A Licensed coach specializing in youth development"
+        bio: "An elite UEFA Pro licensed coach with a remarkable track record of nurturing young talent into professional stars. His innovative training methods and deep understanding of modern football have transformed countless players, while his leadership style creates an environment where excellence thrives."
       },
       {
         name: "David Williams",
@@ -41,10 +41,10 @@ const translations = {
         bio: "スポーツマネジメントにおける先見性のあるリーダー。エリートアスリートの育成に10年以上の経験を持ち、東洋と西洋のスポーツ哲学への深い理解と革新的なトレーニング方法論を提供しています。"
       },
       {
-        name: "サラ・ジョンソン",
-        position: "テクニカルディレクター",
+        name: "マシュー・フリーマン",
+        position: "ヘッドコーチ",
         image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158",
-        bio: "ユース育成を専門とするUEFA Aライセンス保持コーチ"
+        bio: "UEFA プロライセンスを持つエリートコーチとして、若い才能をプロフェッショナルな選手へと育成してきた輝かしい実績を持つ。革新的なトレーニング方法と現代サッカーへの深い理解により、数多くの選手を変革し、卓越性が育つ環境づくりにおいても優れたリーダーシップを発揮している。"
       },
       {
         name: "デビッド・ウィリアムス",
@@ -65,10 +65,10 @@ const translations = {
         bio: "Ein visionärer Führungskraft mit nachgewiesener Erfolgsbilanz im Sportmanagement. Mit über einem Jahrzehnt Erfahrung in der Entwicklung von Elitesportlern bringt Hakuto innovative Trainingsmethoden und ein tiefes Verständnis sowohl östlicher als auch westlicher Sportphilosophien mit."
       },
       {
-        name: "Sarah Johnson",
-        position: "Technische Direktorin",
+        name: "Matthew Freeman",
+        position: "Cheftrainer",
         image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158",
-        bio: "UEFA-A-lizenzierte Trainerin mit Schwerpunkt Jugendentwicklung"
+        bio: "Ein Elite-UEFA-Pro-lizenzierter Trainer mit einer bemerkenswerten Erfolgsbilanz in der Entwicklung junger Talente zu Profistars. Seine innovativen Trainingsmethoden und sein tiefes Verständnis des modernen Fußballs haben unzählige Spieler transformiert, während sein Führungsstil ein Umfeld schafft, in dem Exzellenz gedeiht."
       },
       {
         name: "David Williams",
