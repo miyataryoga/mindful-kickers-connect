@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { useNavigate } from "react-router-dom";
-import { useState } from "react";
 import { Tabs, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import { useTranslation } from "@/contexts/TranslationContext";
 
 const translations = {
   en: {
@@ -29,7 +29,7 @@ const translations = {
 
 const Hero = () => {
   const navigate = useNavigate();
-  const [language, setLanguage] = useState<"en" | "ja" | "de">("en");
+  const { language, setLanguage } = useTranslation();
 
   return (
     <section className="relative h-screen flex items-center justify-center overflow-hidden bg-muted">
