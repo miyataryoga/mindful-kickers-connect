@@ -30,7 +30,7 @@ const Hero = () => {
               className="w-40 h-40 md:w-48 md:h-48"
             />
           </div>
-          <span className="inline-block px-4 py-1 mb-4 bg-primary/10 text-primary rounded-full text-sm font-medium">
+          <span className="inline-block px-4 py-1 mb-4 bg-primary/10 text-black rounded-full text-sm font-medium">
             U6-12 Football Academy in Düsseldorf
           </span>
           <h1 className="text-4xl md:text-6xl font-bold mb-6 tracking-tight">
