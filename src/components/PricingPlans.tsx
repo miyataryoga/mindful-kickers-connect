@@ -37,9 +37,9 @@ const translations = {
         name: "English Plus",
         price: "30€",
         period: "/lesson",
-        description: "Individual English lessons",
+        description: "Group English lessons",
         features: [
-          "One-on-one English lessons",
+          "Group English lessons",
           "Sports-focused vocabulary",
           "Conversation practice",
           "Progress assessment",
