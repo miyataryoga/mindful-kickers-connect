@@ -8,17 +8,17 @@ const translations = {
     subtitle: "Learn from the Best",
     players: [
       {
-        name: "Takashi Inui",
+        name: "Undecided",
         position: "Professional Mentor",
         image: "https://images.unsplash.com/photo-1519389950473-47ba0277781c",
       },
       {
-        name: "Shinji Kagawa",
+        name: "Undecided",
         position: "Guest Coach",
         image: "https://images.unsplash.com/photo-1605810230434-7631ac76ec81",
       },
       {
-        name: "Makoto Hasebe",
+        name: "Undecided",
         position: "Technical Advisor",
         image: "https://images.unsplash.com/photo-1517022812141-23620dba5c23",
       },
