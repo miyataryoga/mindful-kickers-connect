@@ -57,7 +57,7 @@ const SimpleTeamResults = () => {
           <span className="text-primary text-sm font-medium uppercase tracking-wider">
             Latest Results
           </span>
-          <h2 className="text-2xl md:text-4xl font-bold mt-2">Team Performance</h2>
+          <h2 className="text-2xl md:text-4xl font-bold mt-2">[Example] Team Performance</h2>
         </div>
 
         <Tabs defaultValue="U6" className="w-full" onValueChange={setSelectedGroup}>
