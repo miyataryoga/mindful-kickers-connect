@@ -1,7 +1,7 @@
 import React from "react";
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Trophy } from "lucide-react";
+import { Trophy, Users } from "lucide-react";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { useTranslation } from "@/contexts/TranslationContext";
 import { useIsMobile } from "@/hooks/use-mobile";
@@ -51,6 +51,9 @@ const SimpleTeamResults = () => {
     <section className="py-12 md:py-24 bg-muted">
       <div className="container mx-auto px-4">
         <div className="text-center mb-8 md:mb-16">
+          <div className="flex items-center justify-center gap-2 mb-4">
+            <Users className="h-12 w-12 text-primary" />
+          </div>
           <span className="text-primary text-sm font-medium uppercase tracking-wider">
             Latest Results
           </span>
