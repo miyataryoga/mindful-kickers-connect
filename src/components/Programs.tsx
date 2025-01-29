@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { Soccer, GraduationCap, Users } from "lucide-react";
+import { BallFootball, GraduationCap, Users } from "lucide-react";
 import { useTranslation } from "@/contexts/TranslationContext";
 
 const translations = {
@@ -63,7 +63,7 @@ const translations = {
   },
 };
 
-const programIcons = [Soccer, GraduationCap, Users];
+const programIcons = [BallFootball, GraduationCap, Users];
 
 const Programs = () => {
   const { language } = useTranslation();
