@@ -8,7 +8,14 @@ import PricingPlans from "../components/PricingPlans";
 import News from "../components/News";
 import Principles from "../components/Principles";
 import Staff from "../components/Staff";
-import { Tabs, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import { Button } from "@/components/ui/button";
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu";
+import { Menu } from "lucide-react";
 
 const Index = () => {
   useEffect(() => {
@@ -31,34 +38,39 @@ const Index = () => {
       <div className="sticky top-0 z-50 bg-background/80 backdrop-blur-sm border-b">
         <div className="container mx-auto px-4 py-1">
           <div className="flex justify-end">
-            <Tabs defaultValue="hero" className="w-auto">
-              <TabsList className="flex flex-col gap-1">
-                <TabsTrigger value="hero" onClick={() => scrollToSection("hero")} className="px-2 py-1 text-sm w-32 justify-start">
+            <DropdownMenu>
+              <DropdownMenuTrigger asChild>
+                <Button variant="outline" size="icon">
+                  <Menu className="h-4 w-4" />
+                </Button>
+              </DropdownMenuTrigger>
+              <DropdownMenuContent align="end" className="w-40">
+                <DropdownMenuItem onClick={() => scrollToSection("hero")}>
                   Home
-                </TabsTrigger>
-                <TabsTrigger value="principles" onClick={() => scrollToSection("principles")} className="px-2 py-1 text-sm w-32 justify-start">
+                </DropdownMenuItem>
+                <DropdownMenuItem onClick={() => scrollToSection("principles")}>
                   Principles
-                </TabsTrigger>
-                <TabsTrigger value="programs" onClick={() => scrollToSection("programs")} className="px-2 py-1 text-sm w-32 justify-start">
+                </DropdownMenuItem>
+                <DropdownMenuItem onClick={() => scrollToSection("programs")}>
                   Programs
-                </TabsTrigger>
-                <TabsTrigger value="results" onClick={() => scrollToSection("results")} className="px-2 py-1 text-sm w-32 justify-start">
+                </DropdownMenuItem>
+                <DropdownMenuItem onClick={() => scrollToSection("results")}>
                   Results
-                </TabsTrigger>
-                <TabsTrigger value="news" onClick={() => scrollToSection("news")} className="px-2 py-1 text-sm w-32 justify-start">
+                </DropdownMenuItem>
+                <DropdownMenuItem onClick={() => scrollToSection("news")}>
                   News
-                </TabsTrigger>
-                <TabsTrigger value="pricing" onClick={() => scrollToSection("pricing")} className="px-2 py-1 text-sm w-32 justify-start">
+                </DropdownMenuItem>
+                <DropdownMenuItem onClick={() => scrollToSection("pricing")}>
                   Pricing
-                </TabsTrigger>
-                <TabsTrigger value="mentors" onClick={() => scrollToSection("mentors")} className="px-2 py-1 text-sm w-32 justify-start">
+                </DropdownMenuItem>
+                <DropdownMenuItem onClick={() => scrollToSection("mentors")}>
                   Mentors
-                </TabsTrigger>
-                <TabsTrigger value="staff" onClick={() => scrollToSection("staff")} className="px-2 py-1 text-sm w-32 justify-start">
+                </DropdownMenuItem>
+                <DropdownMenuItem onClick={() => scrollToSection("staff")}>
                   Staff
-                </TabsTrigger>
-              </TabsList>
-            </Tabs>
+                </DropdownMenuItem>
+              </DropdownMenuContent>
+            </DropdownMenu>
           </div>
         </div>
       </div>
