@@ -6,6 +6,21 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { useTranslation } from "@/contexts/TranslationContext";
 import { useIsMobile } from "@/hooks/use-mobile";
 
+const translations = {
+  en: {
+    latestResults: "Latest Results",
+    teamPerformance: "[Example] Team Performance"
+  },
+  ja: {
+    latestResults: "最新の結果",
+    teamPerformance: "[例] チームパフォーマンス"
+  },
+  de: {
+    latestResults: "Neueste Ergebnisse",
+    teamPerformance: "[Beispiel] Team Leistung"
+  }
+};
+
 const teamResults = {
   U6: [
     { opponent: "Barcelona Academy", result: "Win", score: "3-1" },
@@ -33,6 +48,7 @@ const SimpleTeamResults = () => {
   const { language } = useTranslation();
   const [selectedGroup, setSelectedGroup] = React.useState<string>("U6");
   const isMobile = useIsMobile();
+  const content = translations[language];
 
   const getResultColor = (result: string) => {
     switch (result) {
@@ -55,9 +71,9 @@ const SimpleTeamResults = () => {
             <Users className="h-12 w-12 text-primary" />
           </div>
           <span className="text-primary text-sm font-medium uppercase tracking-wider">
-            Latest Results
+            {content.latestResults}
           </span>
-          <h2 className="text-2xl md:text-4xl font-bold mt-2">[Example] Team Performance</h2>
+          <h2 className="text-2xl md:text-4xl font-bold mt-2">{content.teamPerformance}</h2>
         </div>
 
         <Tabs defaultValue="U6" className="w-full" onValueChange={setSelectedGroup}>
