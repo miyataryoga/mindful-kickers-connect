@@ -1,12 +1,12 @@
 import React from "react";
-import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Trophy, Users } from "lucide-react";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { useTranslation } from "@/contexts/TranslationContext";
-import { useIsMobile } from "@/hooks/use-mobile";
+import ResultsTable from "./team-results/ResultsTable";
+import { TeamResultsData, Translations } from "./team-results/types";
 
-const translations = {
+const translations: Record<string, Translations> = {
   en: {
     latestResults: "Latest Results",
     teamPerformance: "[Example] Team Performance"
@@ -21,7 +21,7 @@ const translations = {
   }
 };
 
-const teamResults = {
+const teamResults: TeamResultsData = {
   U6: [
     { opponent: "Arsenal Academy", result: "Draw", score: "3-3", date: "2024-02-21" },
     { opponent: "Barcelona Academy", result: "Win", score: "3-1", date: "2024-01-15" },
@@ -57,22 +57,7 @@ const teamResults = {
 
 const SimpleTeamResults = () => {
   const { language } = useTranslation();
-  const [selectedGroup, setSelectedGroup] = React.useState<string>("U6");
-  const isMobile = useIsMobile();
   const content = translations[language];
-
-  const getResultColor = (result: string) => {
-    switch (result) {
-      case "Win":
-        return "text-green-600 bg-green-100";
-      case "Loss":
-        return "text-red-600 bg-red-100";
-      case "Draw":
-        return "text-yellow-600 bg-yellow-100";
-      default:
-        return "";
-    }
-  };
 
   return (
     <section className="py-12 md:py-24 bg-muted">
@@ -87,7 +72,7 @@ const SimpleTeamResults = () => {
           <h2 className="text-2xl md:text-4xl font-bold mt-2">{content.teamPerformance}</h2>
         </div>
 
-        <Tabs defaultValue="U6" className="w-full space-y-8" onValueChange={setSelectedGroup}>
+        <Tabs defaultValue="U6" className="w-full space-y-8">
           <TabsList className="grid w-full grid-cols-2 md:grid-cols-4 gap-2">
             {Object.keys(teamResults).map((group) => (
               <TabsTrigger 
@@ -109,34 +94,7 @@ const SimpleTeamResults = () => {
                   </div>
                 </CardHeader>
                 <CardContent>
-                  <div className="overflow-x-auto">
-                    <Table>
-                      <TableHeader>
-                        <TableRow>
-                          <TableHead className="whitespace-nowrap">Date</TableHead>
-                          <TableHead className="whitespace-nowrap">Opponent</TableHead>
-                          <TableHead className="whitespace-nowrap">Score</TableHead>
-                          <TableHead className="whitespace-nowrap">Result</TableHead>
-                        </TableRow>
-                      </TableHeader>
-                      <TableBody>
-                        {games.map((game, index) => (
-                          <TableRow key={index}>
-                            <TableCell className="whitespace-nowrap">
-                              {new Date(game.date).toLocaleDateString()}
-                            </TableCell>
-                            <TableCell className="whitespace-nowrap">{game.opponent}</TableCell>
-                            <TableCell className="whitespace-nowrap">{game.score}</TableCell>
-                            <TableCell>
-                              <span className={`px-2 py-1 rounded-full text-xs font-medium ${getResultColor(game.result)}`}>
-                                {game.result}
-                              </span>
-                            </TableCell>
-                          </TableRow>
-                        ))}
-                      </TableBody>
-                    </Table>
-                  </div>
+                  <ResultsTable results={games} />
                 </CardContent>
               </Card>
             </TabsContent>
