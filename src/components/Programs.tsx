@@ -89,15 +89,15 @@ const Programs = () => {
               transition={{ delay: index * 0.2 }}
               className={`p-8 rounded-2xl ${
                 program.highlight
-                  ? "bg-primary text-white hover:shadow-xl hover:shadow-red-200"
+                  ? "bg-muted hover:shadow-lg"
                   : "bg-muted hover:shadow-lg"
               } transition-all duration-300`}
             >
               {React.createElement(programIcons[index], {
-                className: `w-12 h-12 ${program.highlight ? "text-white" : "text-primary"} mb-6`,
+                className: `w-12 h-12 ${program.highlight ? "text-primary" : "text-primary"} mb-6`,
               })}
               <h3 className="text-xl font-bold mb-4">{program.title}</h3>
-              <p className={program.highlight ? "text-white/90" : "text-muted-foreground"}>
+              <p className={program.highlight ? "text-muted-foreground" : "text-muted-foreground"}>
                 {program.description}
               </p>
             </motion.div>
