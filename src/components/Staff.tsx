@@ -14,13 +14,13 @@ const translations = {
         name: "Hakuto Kondo",
         position: "Representative",
         image: "https://images.unsplash.com/photo-1581092795360-fd1ca04f0952",
-        bio: "A visionary leader with a proven track record in sports management. With over a decade of experience in developing elite athletes, Hakuto brings innovative training methodologies and a deep understanding of both Eastern and Western sporting philosophies."
+        bio: "A visionary leader with a proven track record in sports management. He brings innovative training methodologies and a deep understanding of both Eastern and Western sporting philosophies."
       },
       {
         name: "Matthew Freeman",
         position: "Head Coach",
         image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158",
-        bio: "An elite UEFA Pro licensed coach with a remarkable track record of nurturing young talent into professional stars. His innovative training methods and deep understanding of modern football have transformed countless players, while his leadership style creates an environment where excellence thrives."
+        bio: "An elite FA licensed coach with a remarkable track record of nurturing young talent into professional stars. His innovative training methods and deep understanding of modern football have transformed countless players, while his leadership style creates an environment where excellence thrives."
       },
       {
         name: "Ryan Miyata",
