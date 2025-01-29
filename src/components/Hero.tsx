@@ -4,21 +4,21 @@ import { useTranslation } from "@/contexts/TranslationContext";
 
 const translations = {
   en: {
-    location: "[Upcoming] U6-12 Football Academy in Düsseldorf",
+    location: "[Upcoming] U6-12 Football Academy",
     title: "Düsseldorf Toki Academy",
     subtitle: "Excellence Through Discipline",
     description: "Join our unique academy combining Japanese football excellence with English education",
     button: "Join Our Academy"
   },
   ja: {
-    location: "デュッセルドルフ[近日開校]U6-12サッカーアカデミー",
+    location: "[近日開校]U6-12サッカーアカデミー",
     title: "デュッセルドルフ・トキアカデミー",
     subtitle: "規律を通じた卓越性",
     description: "日本のサッカーの卓越性と英語教育を組み合わせたユニークなアカデミーに参加しましょう",
     button: "アカデミーに参加"
   },
   de: {
-    location: "[Kommende] U6-12 Fußballakademie in Düsseldorf",
+    location: "[Kommende] U6-12 Fußballakademie",
     title: "Düsseldorf Toki Akademie",
     subtitle: "Exzellenz durch Disziplin",
     description: "Treten Sie unserer einzigartigen Akademie bei, die japanische Fußballexzellenz mit Englischunterricht verbindet",
