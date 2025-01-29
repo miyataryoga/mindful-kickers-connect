@@ -44,7 +44,7 @@ const Index = () => {
                   <Menu className="h-4 w-4" />
                 </Button>
               </DropdownMenuTrigger>
-              <DropdownMenuContent align="start" className="w-40">
+              <DropdownMenuContent align="start" className="w-40 bg-white">
                 <DropdownMenuItem onClick={() => scrollToSection("hero")}>
                   Home
                 </DropdownMenuItem>
