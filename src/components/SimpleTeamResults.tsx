@@ -23,24 +23,24 @@ const translations = {
 
 const teamResults = {
   U6: [
-    { opponent: "Barcelona Academy", result: "Win", score: "3-1" },
-    { opponent: "Real Madrid Academy", result: "Win", score: "2-0" },
-    { opponent: "Ajax Academy", result: "Draw", score: "1-1" }
+    { opponent: "Barcelona Academy", result: "Win", score: "3-1", date: "2024-01-15" },
+    { opponent: "Real Madrid Academy", result: "Win", score: "2-0", date: "2024-01-22" },
+    { opponent: "Ajax Academy", result: "Draw", score: "1-1", date: "2024-01-29" }
   ],
   U8: [
-    { opponent: "PSG Academy", result: "Win", score: "4-2" },
-    { opponent: "Manchester City Academy", result: "Win", score: "3-0" },
-    { opponent: "Bayern Munich Academy", result: "Loss", score: "1-2" }
+    { opponent: "PSG Academy", result: "Win", score: "4-2", date: "2024-01-14" },
+    { opponent: "Manchester City Academy", result: "Win", score: "3-0", date: "2024-01-21" },
+    { opponent: "Bayern Munich Academy", result: "Loss", score: "1-2", date: "2024-01-28" }
   ],
   U10: [
-    { opponent: "Liverpool Academy", result: "Win", score: "2-1" },
-    { opponent: "Chelsea Academy", result: "Win", score: "3-1" },
-    { opponent: "Juventus Academy", result: "Win", score: "4-0" }
+    { opponent: "Liverpool Academy", result: "Win", score: "2-1", date: "2024-01-16" },
+    { opponent: "Chelsea Academy", result: "Win", score: "3-1", date: "2024-01-23" },
+    { opponent: "Juventus Academy", result: "Win", score: "4-0", date: "2024-01-30" }
   ],
   U12: [
-    { opponent: "AC Milan Academy", result: "Draw", score: "2-2" },
-    { opponent: "Inter Milan Academy", result: "Win", score: "2-0" },
-    { opponent: "Roma Academy", result: "Win", score: "3-1" }
+    { opponent: "AC Milan Academy", result: "Draw", score: "2-2", date: "2024-01-17" },
+    { opponent: "Inter Milan Academy", result: "Win", score: "2-0", date: "2024-01-24" },
+    { opponent: "Roma Academy", result: "Win", score: "3-1", date: "2024-01-31" }
   ]
 };
 
@@ -102,6 +102,7 @@ const SimpleTeamResults = () => {
                     <Table>
                       <TableHeader>
                         <TableRow>
+                          <TableHead className="whitespace-nowrap">Date</TableHead>
                           <TableHead className="whitespace-nowrap">Opponent</TableHead>
                           <TableHead className="whitespace-nowrap">Score</TableHead>
                           <TableHead className="whitespace-nowrap">Result</TableHead>
@@ -110,6 +111,9 @@ const SimpleTeamResults = () => {
                       <TableBody>
                         {games.map((game, index) => (
                           <TableRow key={index}>
+                            <TableCell className="whitespace-nowrap">
+                              {new Date(game.date).toLocaleDateString()}
+                            </TableCell>
                             <TableCell className="whitespace-nowrap">{game.opponent}</TableCell>
                             <TableCell className="whitespace-nowrap">{game.score}</TableCell>
                             <TableCell>
