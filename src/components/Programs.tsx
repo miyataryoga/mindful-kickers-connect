@@ -89,7 +89,7 @@ const Programs = () => {
               transition={{ delay: index * 0.2 }}
               className={`p-8 rounded-2xl ${
                 program.highlight
-                  ? "bg-gradient-to-br from-[#8B5CF6] to-[#D946EF] text-white hover:shadow-xl hover:shadow-purple-200"
+                  ? "bg-primary text-white hover:shadow-xl hover:shadow-red-200"
                   : "bg-muted hover:shadow-lg"
               } transition-all duration-300`}
             >
