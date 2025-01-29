@@ -1,13 +1,16 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { Card, CardContent, CardHeader, CardTitle } from "./ui/card";
-import { Newspaper, Trophy, Bell } from "lucide-react";
+import { Newspaper, Trophy, Bell, ArrowRight } from "lucide-react";
 import { useTranslation } from "@/contexts/TranslationContext";
+import { Button } from "./ui/button";
+import { useNavigate } from "react-router-dom";
 
 const translations = {
   en: {
     latestUpdates: "Latest Updates",
     academyNews: "[Example] Academy News",
+    readMore: "Read More",
     news: [
       {
         title: "Summer Training Camp Registration Open",
@@ -32,6 +35,7 @@ const translations = {
   ja: {
     latestUpdates: "最新情報",
     academyNews: "[例] アカデミーニュース",
+    readMore: "もっと見る",
     news: [
       {
         title: "夏季トレーニングキャンプの登録開始",
@@ -56,6 +60,7 @@ const translations = {
   de: {
     latestUpdates: "Neueste Updates",
     academyNews: "[Beispiel] Akademie-Nachrichten",
+    readMore: "Mehr lesen",
     news: [
       {
         title: "Anmeldung für Sommertrainingslager geöffnet",
@@ -83,6 +88,7 @@ const newsIcons = [Bell, Trophy, Newspaper];
 
 const News = () => {
   const { language } = useTranslation();
+  const navigate = useNavigate();
   const content = translations[language];
 
   return (
@@ -121,6 +127,15 @@ const News = () => {
               </Card>
             </motion.div>
           ))}
+        </div>
+        <div className="flex justify-center mt-12">
+          <Button
+            onClick={() => navigate("/news")}
+            className="flex items-center gap-2"
+          >
+            {content.readMore}
+            <ArrowRight className="h-4 w-4" />
+          </Button>
         </div>
       </div>
     </section>

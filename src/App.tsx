@@ -1,31 +1,23 @@
-import { Toaster } from "@/components/ui/toaster";
-import { Toaster as Sonner } from "@/components/ui/sonner";
-import { TooltipProvider } from "@/components/ui/tooltip";
-import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { TranslationProvider } from "./contexts/TranslationContext";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { TranslationProvider } from "@/contexts/TranslationContext";
 import Index from "./pages/Index";
-import Contact from "./pages/Contact";
+import NewsPage from "./pages/News";
 import Results from "./pages/Results";
+import Contact from "./pages/Contact";
 
-const queryClient = new QueryClient();
-
-const App = () => (
-  <QueryClientProvider client={queryClient}>
-    <TooltipProvider>
+function App() {
+  return (
+    <Router>
       <TranslationProvider>
-        <Toaster />
-        <Sonner />
-        <BrowserRouter>
-          <Routes>
-            <Route path="/" element={<Index />} />
-            <Route path="/contact" element={<Contact />} />
-            <Route path="/results" element={<Results />} />
-          </Routes>
-        </BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Index />} />
+          <Route path="/news" element={<NewsPage />} />
+          <Route path="/results" element={<Results />} />
+          <Route path="/contact" element={<Contact />} />
+        </Routes>
       </TranslationProvider>
-    </TooltipProvider>
-  </QueryClientProvider>
-);
+    </Router>
+  );
+}
 
 export default App;
