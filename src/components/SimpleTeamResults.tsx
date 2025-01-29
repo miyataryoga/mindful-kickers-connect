@@ -66,7 +66,7 @@ const SimpleTeamResults = () => {
   return (
     <section className="py-12 md:py-24 bg-muted">
       <div className="container mx-auto px-4">
-        <div className="text-center mb-12">
+        <div className="text-center mb-16">
           <div className="flex items-center justify-center gap-2 mb-4">
             <Users className="h-12 w-12 text-primary" />
           </div>
