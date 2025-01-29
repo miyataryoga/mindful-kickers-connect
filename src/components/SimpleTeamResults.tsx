@@ -6,7 +6,7 @@ import { useTranslation } from "@/contexts/TranslationContext";
 import { useNavigate } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import ResultsTable from "./team-results/ResultsTable";
-import { TeamResultsData, Translations } from "./team-results/types";
+import { TeamResult, TeamResultsData, Translations } from "./team-results/types";
 
 const translations: Record<string, Translations> = {
   en: {

@@ -12,4 +12,5 @@ export interface TeamResultsData {
 export interface Translations {
   latestResults: string;
   teamPerformance: string;
+  viewAllResults: string;
 }
