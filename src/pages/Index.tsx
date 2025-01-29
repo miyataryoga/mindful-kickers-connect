@@ -32,29 +32,29 @@ const Index = () => {
         <div className="container mx-auto px-4 py-1">
           <div className="flex justify-end">
             <Tabs defaultValue="hero" className="w-auto">
-              <TabsList className="grid grid-cols-8 gap-1">
-                <TabsTrigger value="hero" onClick={() => scrollToSection("hero")} className="px-2 py-1 text-sm">
+              <TabsList className="flex flex-col gap-1">
+                <TabsTrigger value="hero" onClick={() => scrollToSection("hero")} className="px-2 py-1 text-sm w-32 justify-start">
                   Home
                 </TabsTrigger>
-                <TabsTrigger value="principles" onClick={() => scrollToSection("principles")} className="px-2 py-1 text-sm">
+                <TabsTrigger value="principles" onClick={() => scrollToSection("principles")} className="px-2 py-1 text-sm w-32 justify-start">
                   Principles
                 </TabsTrigger>
-                <TabsTrigger value="programs" onClick={() => scrollToSection("programs")} className="px-2 py-1 text-sm">
+                <TabsTrigger value="programs" onClick={() => scrollToSection("programs")} className="px-2 py-1 text-sm w-32 justify-start">
                   Programs
                 </TabsTrigger>
-                <TabsTrigger value="results" onClick={() => scrollToSection("results")} className="px-2 py-1 text-sm">
+                <TabsTrigger value="results" onClick={() => scrollToSection("results")} className="px-2 py-1 text-sm w-32 justify-start">
                   Results
                 </TabsTrigger>
-                <TabsTrigger value="news" onClick={() => scrollToSection("news")} className="px-2 py-1 text-sm">
+                <TabsTrigger value="news" onClick={() => scrollToSection("news")} className="px-2 py-1 text-sm w-32 justify-start">
                   News
                 </TabsTrigger>
-                <TabsTrigger value="pricing" onClick={() => scrollToSection("pricing")} className="px-2 py-1 text-sm">
+                <TabsTrigger value="pricing" onClick={() => scrollToSection("pricing")} className="px-2 py-1 text-sm w-32 justify-start">
                   Pricing
                 </TabsTrigger>
-                <TabsTrigger value="mentors" onClick={() => scrollToSection("mentors")} className="px-2 py-1 text-sm">
+                <TabsTrigger value="mentors" onClick={() => scrollToSection("mentors")} className="px-2 py-1 text-sm w-32 justify-start">
                   Mentors
                 </TabsTrigger>
-                <TabsTrigger value="staff" onClick={() => scrollToSection("staff")} className="px-2 py-1 text-sm">
+                <TabsTrigger value="staff" onClick={() => scrollToSection("staff")} className="px-2 py-1 text-sm w-32 justify-start">
                   Staff
                 </TabsTrigger>
               </TabsList>
