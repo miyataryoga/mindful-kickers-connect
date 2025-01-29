@@ -61,7 +61,7 @@ const Index = () => {
                   News
                 </DropdownMenuItem>
                 <DropdownMenuItem onClick={() => scrollToSection("pricing")}>
-                  Pricing
+                  Plans
                 </DropdownMenuItem>
                 <DropdownMenuItem onClick={() => scrollToSection("mentors")}>
                   Mentors
