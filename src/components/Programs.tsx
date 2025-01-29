@@ -17,8 +17,8 @@ const translations = {
         description: "Integrated English learning through sports and activities",
       },
       {
-        title: "Lasting Friendships",
-        description: "Building strong bonds through teamwork and shared experiences",
+        title: "Family Community",
+        description: "Creating a supportive environment where parents and children grow together through shared football experiences",
       },
     ],
   },
@@ -35,8 +35,8 @@ const translations = {
         description: "スポーツと活動を通じた総合的な英語学習",
       },
       {
-        title: "永続的な友情",
-        description: "チームワークと共有体験を通じた強い絆の構築",
+        title: "ファミリーコミュニティ",
+        description: "サッカーを通じて親子が共に成長できる支援環境の創造",
       },
     ],
   },
@@ -53,8 +53,8 @@ const translations = {
         description: "Integriertes Englischlernen durch Sport und Aktivitäten",
       },
       {
-        title: "Dauerhafte Freundschaften",
-        description: "Aufbau starker Bindungen durch Teamwork und gemeinsame Erfahrungen",
+        title: "Familiengemeinschaft",
+        description: "Schaffung einer unterstützenden Umgebung, in der Eltern und Kinder durch gemeinsame Fußballerlebnisse zusammen wachsen",
       },
     ],
   },
