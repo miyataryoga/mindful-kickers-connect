@@ -33,19 +33,19 @@ const translations = {
     players: [
       {
         id: "mentor1",
-        name: "乾 貴士",
+        name: "未定",
         position: "プロフェッショナルメンター",
         image: "/lovable-uploads/4bd0fa37-0c17-4100-b699-6265f4128aba.png",
       },
       {
         id: "mentor2",
-        name: "香川 真司",
+        name: "未定",
         position: "ゲストコーチ",
         image: "/lovable-uploads/4bd0fa37-0c17-4100-b699-6265f4128aba.png",
       },
       {
         id: "mentor3",
-        name: "長谷部 誠",
+        name: "未定",
         position: "テクニカルアドバイザー",
         image: "/lovable-uploads/4bd0fa37-0c17-4100-b699-6265f4128aba.png",
       },
@@ -57,19 +57,19 @@ const translations = {
     players: [
       {
         id: "mentor1",
-        name: "Takashi Inui",
+        name: "Noch nicht entschieden",
         position: "Professioneller Mentor",
         image: "/lovable-uploads/4bd0fa37-0c17-4100-b699-6265f4128aba.png",
       },
       {
         id: "mentor2",
-        name: "Shinji Kagawa",
+        name: "Noch nicht entschieden",
         position: "Gasttrainer",
         image: "/lovable-uploads/4bd0fa37-0c17-4100-b699-6265f4128aba.png",
       },
       {
         id: "mentor3",
-        name: "Makoto Hasebe",
+        name: "Noch nicht entschieden",
         position: "Technischer Berater",
         image: "/lovable-uploads/4bd0fa37-0c17-4100-b699-6265f4128aba.png",
       },
