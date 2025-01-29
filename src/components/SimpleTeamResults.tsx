@@ -66,7 +66,7 @@ const SimpleTeamResults = () => {
   return (
     <section className="py-12 md:py-24 bg-muted">
       <div className="container mx-auto px-4">
-        <div className="text-center mb-8 md:mb-16">
+        <div className="text-center mb-12">
           <div className="flex items-center justify-center gap-2 mb-4">
             <Users className="h-12 w-12 text-primary" />
           </div>
@@ -76,7 +76,7 @@ const SimpleTeamResults = () => {
           <h2 className="text-2xl md:text-4xl font-bold mt-2">{content.teamPerformance}</h2>
         </div>
 
-        <Tabs defaultValue="U6" className="w-full" onValueChange={setSelectedGroup}>
+        <Tabs defaultValue="U6" className="w-full space-y-8" onValueChange={setSelectedGroup}>
           <TabsList className="grid w-full grid-cols-2 md:grid-cols-4 gap-2">
             {Object.keys(teamResults).map((group) => (
               <TabsTrigger 
@@ -89,7 +89,7 @@ const SimpleTeamResults = () => {
             ))}
           </TabsList>
           {Object.entries(teamResults).map(([group, games]) => (
-            <TabsContent key={group} value={group}>
+            <TabsContent key={group} value={group} className="mt-6">
               <Card>
                 <CardHeader>
                   <div className="flex items-center gap-2">
