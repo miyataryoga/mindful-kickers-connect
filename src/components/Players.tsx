@@ -1,5 +1,5 @@
 import React from "react";
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 import { useTranslation } from "@/contexts/TranslationContext";
 
 const translations = {
@@ -93,27 +93,30 @@ const Players = () => {
           </h2>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {content.players.map((player, index) => (
-            <motion.div
-              key={player.id}
-              initial={{ opacity: 0, scale: 0.9 }}
-              whileInView={{ opacity: 1, scale: 1 }}
-              transition={{ delay: index * 0.2 }}
-              className="relative group"
-            >
-              <div className="overflow-hidden rounded-2xl">
-                <img
-                  src={player.image}
-                  alt={player.name}
-                  className="w-full aspect-[3/4] object-cover transition-transform duration-300 group-hover:scale-105"
-                />
-              </div>
-              <div className="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-black/70 to-transparent text-white">
-                <h3 className="text-xl font-bold">{player.name}</h3>
-                <p className="text-sm opacity-90">{player.position}</p>
-              </div>
-            </motion.div>
-          ))}
+          <AnimatePresence mode="wait">
+            {content.players.map((player, index) => (
+              <motion.div
+                key={player.id}
+                initial={{ opacity: 0, scale: 0.9 }}
+                animate={{ opacity: 1, scale: 1 }}
+                exit={{ opacity: 0, scale: 0.9 }}
+                transition={{ delay: index * 0.2 }}
+                className="relative group"
+              >
+                <div className="overflow-hidden rounded-2xl">
+                  <img
+                    src={player.image}
+                    alt={player.name}
+                    className="w-full aspect-[3/4] object-cover transition-transform duration-300 group-hover:scale-105"
+                  />
+                </div>
+                <div className="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-black/70 to-transparent text-white">
+                  <h3 className="text-xl font-bold">{player.name}</h3>
+                  <p className="text-sm opacity-90">{player.position}</p>
+                </div>
+              </motion.div>
+            ))}
+          </AnimatePresence>
         </div>
       </div>
     </section>
