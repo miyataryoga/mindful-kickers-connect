@@ -23,6 +23,7 @@ const translations = {
 
 const teamResults = {
   U6: [
+    { opponent: "Arsenal Academy", result: "Draw", score: "3-3", date: "2024-02-21" },
     { opponent: "Barcelona Academy", result: "Win", score: "3-1", date: "2024-01-15" },
     { opponent: "Real Madrid Academy", result: "Win", score: "2-0", date: "2024-01-22" },
     { opponent: "Ajax Academy", result: "Draw", score: "1-1", date: "2024-01-29" }
