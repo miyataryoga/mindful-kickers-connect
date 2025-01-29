@@ -11,7 +11,7 @@ const translations = {
     subtitle: "Meet the Team Behind Our Success",
     staff: [
       {
-        name: "Hakuto Kondo",
+        name: "Hokuto Kondo",
         position: "Representative",
         image: "https://images.unsplash.com/photo-1581092795360-fd1ca04f0952",
         bio: "A visionary leader with a proven track record in sports management. He brings innovative training methodologies and a deep understanding of both Eastern and Western sporting philosophies."
@@ -59,7 +59,7 @@ const translations = {
     subtitle: "Lernen Sie das Team hinter unserem Erfolg kennen",
     staff: [
       {
-        name: "Hakuto Kondo",
+        name: "Hokuto Kondo",
         position: "Repräsentant",
         image: "https://images.unsplash.com/photo-1581092795360-fd1ca04f0952",
         bio: "Ein visionärer Führungskraft mit nachgewiesener Erfolgsbilanz im Sportmanagement. Mit über einem Jahrzehnt Erfahrung in der Entwicklung von Elitesportlern bringt Hakuto innovative Trainingsmethoden und ein tiefes Verständnis sowohl östlicher als auch westlicher Sportphilosophien mit."
