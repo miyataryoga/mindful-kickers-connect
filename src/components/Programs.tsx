@@ -63,7 +63,7 @@ const translations = {
   },
 };
 
-const programIcons = [Football, GraduationCap, Users];
+const programIcons = [Users, GraduationCap, Users];
 
 const Programs = () => {
   const { language } = useTranslation();
