@@ -29,9 +29,19 @@ const teamResults = {
     { opponent: "Ajax Academy", result: "Draw", score: "1-1", date: "2024-01-29" }
   ],
   U8: [
-    { opponent: "PSG Academy", result: "Win", score: "4-2", date: "2024-01-14" },
-    { opponent: "Manchester City Academy", result: "Win", score: "3-0", date: "2024-01-21" },
-    { opponent: "Bayern Munich Academy", result: "Loss", score: "1-2", date: "2024-01-28" }
+    { opponent: "Atletico Madrid Academy", result: "Win", score: "2-0", date: "2024-02-18" },
+    { opponent: "Borussia Dortmund Academy", result: "Draw", score: "2-2", date: "2024-02-11" },
+    { opponent: "AC Milan Academy", result: "Win", score: "3-1", date: "2024-02-04" },
+    { opponent: "Inter Milan Academy", result: "Loss", score: "1-2", date: "2024-01-28" },
+    { opponent: "Lyon Academy", result: "Win", score: "4-0", date: "2024-01-21" },
+    { opponent: "Porto Academy", result: "Draw", score: "1-1", date: "2024-01-14" },
+    { opponent: "PSG Academy", result: "Win", score: "4-2", date: "2024-01-07" },
+    { opponent: "Manchester City Academy", result: "Win", score: "3-0", date: "2023-12-31" },
+    { opponent: "Bayern Munich Academy", result: "Loss", score: "1-2", date: "2023-12-24" },
+    { opponent: "Ajax Academy", result: "Win", score: "2-0", date: "2023-12-17" },
+    { opponent: "Benfica Academy", result: "Draw", score: "2-2", date: "2023-12-10" },
+    { opponent: "Monaco Academy", result: "Win", score: "3-1", date: "2023-12-03" },
+    { opponent: "Sporting CP Academy", result: "Loss", score: "0-1", date: "2023-11-26" }
   ],
   U10: [
     { opponent: "Liverpool Academy", result: "Win", score: "2-1", date: "2024-01-16" },
