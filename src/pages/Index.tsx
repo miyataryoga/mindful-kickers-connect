@@ -29,35 +29,37 @@ const Index = () => {
       transition={{ duration: 0.5 }}
     >
       <div className="sticky top-0 z-50 bg-background/80 backdrop-blur-sm border-b">
-        <div className="container mx-auto px-4 py-2">
-          <Tabs defaultValue="hero" className="w-full">
-            <TabsList className="grid w-full grid-cols-8">
-              <TabsTrigger value="hero" onClick={() => scrollToSection("hero")}>
-                Home
-              </TabsTrigger>
-              <TabsTrigger value="principles" onClick={() => scrollToSection("principles")}>
-                Principles
-              </TabsTrigger>
-              <TabsTrigger value="programs" onClick={() => scrollToSection("programs")}>
-                Programs
-              </TabsTrigger>
-              <TabsTrigger value="results" onClick={() => scrollToSection("results")}>
-                Results
-              </TabsTrigger>
-              <TabsTrigger value="news" onClick={() => scrollToSection("news")}>
-                News
-              </TabsTrigger>
-              <TabsTrigger value="pricing" onClick={() => scrollToSection("pricing")}>
-                Pricing
-              </TabsTrigger>
-              <TabsTrigger value="mentors" onClick={() => scrollToSection("mentors")}>
-                Mentors
-              </TabsTrigger>
-              <TabsTrigger value="staff" onClick={() => scrollToSection("staff")}>
-                Staff
-              </TabsTrigger>
-            </TabsList>
-          </Tabs>
+        <div className="container mx-auto px-4 py-1">
+          <div className="flex justify-end">
+            <Tabs defaultValue="hero" className="w-auto">
+              <TabsList className="grid grid-cols-8 gap-1">
+                <TabsTrigger value="hero" onClick={() => scrollToSection("hero")} className="px-2 py-1 text-sm">
+                  Home
+                </TabsTrigger>
+                <TabsTrigger value="principles" onClick={() => scrollToSection("principles")} className="px-2 py-1 text-sm">
+                  Principles
+                </TabsTrigger>
+                <TabsTrigger value="programs" onClick={() => scrollToSection("programs")} className="px-2 py-1 text-sm">
+                  Programs
+                </TabsTrigger>
+                <TabsTrigger value="results" onClick={() => scrollToSection("results")} className="px-2 py-1 text-sm">
+                  Results
+                </TabsTrigger>
+                <TabsTrigger value="news" onClick={() => scrollToSection("news")} className="px-2 py-1 text-sm">
+                  News
+                </TabsTrigger>
+                <TabsTrigger value="pricing" onClick={() => scrollToSection("pricing")} className="px-2 py-1 text-sm">
+                  Pricing
+                </TabsTrigger>
+                <TabsTrigger value="mentors" onClick={() => scrollToSection("mentors")} className="px-2 py-1 text-sm">
+                  Mentors
+                </TabsTrigger>
+                <TabsTrigger value="staff" onClick={() => scrollToSection("staff")} className="px-2 py-1 text-sm">
+                  Staff
+                </TabsTrigger>
+              </TabsList>
+            </Tabs>
+          </div>
         </div>
       </div>
 
