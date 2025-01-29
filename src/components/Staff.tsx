@@ -14,7 +14,7 @@ const translations = {
         name: "Hokuto Kondo",
         position: "Representative",
         image: "https://images.unsplash.com/photo-1581092795360-fd1ca04f0952",
-        bio: "A visionary leader with a proven track record in sports management. He brings innovative training methodologies and a deep understanding of both Eastern and Western sporting philosophies."
+        bio: "A visionary leader and strategic innovator in sports management, renowned for transforming athletic programs. He brings revolutionary training methodologies that seamlessly blend Eastern discipline with Western performance techniques, creating a unique development system that consistently produces exceptional results."
       },
       {
         name: "Matthew Freeman",
@@ -38,7 +38,7 @@ const translations = {
         name: "近藤白兎",
         position: "代表",
         image: "https://images.unsplash.com/photo-1581092795360-fd1ca04f0952",
-        bio: "スポーツマネジメントにおける先見性のあるリーダー。エリートアスリートの育成に10年以上の経験を持ち、東洋と西洋のスポーツ哲学への深い理解と革新的なトレーニング方法論を提供しています。"
+        bio: "スポーツマネジメントにおける先見性のあるリーダーであり、戦略的イノベーター。アスレチックプログラムの変革で知られ、東洋の規律と西洋のパフォーマンス技術を見事に融合した革新的なトレーニング方法論を導入。一貫して卓越した結果を生み出すユニークな育成システムを確立しています。"
       },
       {
         name: "マシュー・フリーマン",
@@ -62,7 +62,7 @@ const translations = {
         name: "Hokuto Kondo",
         position: "Repräsentant",
         image: "https://images.unsplash.com/photo-1581092795360-fd1ca04f0952",
-        bio: "Ein visionärer Führungskraft mit nachgewiesener Erfolgsbilanz im Sportmanagement. Mit über einem Jahrzehnt Erfahrung in der Entwicklung von Elitesportlern bringt Hakuto innovative Trainingsmethoden und ein tiefes Verständnis sowohl östlicher als auch westlicher Sportphilosophien mit."
+        bio: "Ein visionärer Führungskraft und strategischer Innovator im Sportmanagement, bekannt für die Transformation von Athletikprogrammen. Er bringt revolutionäre Trainingsmethoden mit, die östliche Disziplin nahtlos mit westlichen Leistungstechniken verbinden und ein einzigartiges Entwicklungssystem schaffen, das konsequent außergewöhnliche Ergebnisse liefert."
       },
       {
         name: "Matthew Freeman",
