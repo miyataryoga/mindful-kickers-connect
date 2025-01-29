@@ -37,14 +37,14 @@ const Index = () => {
     >
       <div className="sticky top-0 z-50 bg-background/80 backdrop-blur-sm border-b">
         <div className="container mx-auto px-4 py-1">
-          <div className="flex justify-end">
+          <div className="flex justify-start">
             <DropdownMenu>
               <DropdownMenuTrigger asChild>
                 <Button variant="outline" size="icon">
                   <Menu className="h-4 w-4" />
                 </Button>
               </DropdownMenuTrigger>
-              <DropdownMenuContent align="end" className="w-40">
+              <DropdownMenuContent align="start" className="w-40">
                 <DropdownMenuItem onClick={() => scrollToSection("hero")}>
                   Home
                 </DropdownMenuItem>
