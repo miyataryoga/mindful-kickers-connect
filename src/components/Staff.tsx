@@ -24,7 +24,7 @@ const translations = {
       {
         name: "Ryan Miyata",
         position: "Performance Analyst",
-        image: "/lovable-uploads/58120430-a489-41fe-8efe-8194f7c4c8d6.png",
+        image: "/lovable-uploads/03050963-6d58-4d5f-ac6a-7204e586ef91.png",
         bio: "A pioneering force in sports analytics, combining cutting-edge technology with deep tactical understanding. His innovative approach to performance analysis has revolutionized training methodologies and player development, leading to significant improvements in both individual and team performance metrics."
       }
     ]
@@ -48,7 +48,7 @@ const translations = {
       {
         name: "ライアン・ミヤタ",
         position: "パフォーマンスアナリスト",
-        image: "/lovable-uploads/58120430-a489-41fe-8efe-8194f7c4c8d6.png",
+        image: "/lovable-uploads/03050963-6d58-4d5f-ac6a-7204e586ef91.png",
         bio: "スポーツアナリティクスの先駆者として、最先端のテクノロジーと戦術的な深い理解を組み合わせる。革新的なパフォーマンス分析アプローチにより、トレーニング方法論と選手育成を革新し、個人とチームの両方のパフォーマンス指標で顕著な向上を実現している。"
       }
     ]
@@ -72,7 +72,7 @@ const translations = {
       {
         name: "Ryan Miyata",
         position: "Leistungsanalytiker",
-        image: "/lovable-uploads/58120430-a489-41fe-8efe-8194f7c4c8d6.png",
+        image: "/lovable-uploads/03050963-6d58-4d5f-ac6a-7204e586ef91.png",
         bio: "Eine Pionierkraft in der Sportanalytik, die modernste Technologie mit tiefem taktischem Verständnis verbindet. Sein innovativer Ansatz zur Leistungsanalyse hat Trainingsmethoden und Spielerentwicklung revolutioniert und zu signifikanten Verbesserungen sowohl der individuellen als auch der Team-Leistungsmetriken geführt."
       }
     ]
