@@ -1,5 +1,4 @@
 import { motion } from "framer-motion";
-import { useNavigate } from "react-router-dom";
 import { Tabs, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { useTranslation } from "@/contexts/TranslationContext";
 
@@ -28,8 +27,11 @@ const translations = {
 };
 
 const Hero = () => {
-  const navigate = useNavigate();
   const { language, setLanguage } = useTranslation();
+
+  const handleJoinClick = () => {
+    window.open('https://docs.google.com/forms/d/e/1FAIpQLSekqOZVMytvSjNfaiRNTaktaRCbWxg118PeUtnwNHMKXSBQWw/viewform?usp=dialog', '_blank');
+  };
 
   return (
     <section className="relative h-screen flex items-center justify-center overflow-hidden bg-muted">
@@ -72,7 +74,7 @@ const Hero = () => {
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
             className="bg-primary text-primary-foreground px-8 py-3 rounded-lg font-medium shadow-lg hover:shadow-xl transition-all duration-300"
-            onClick={() => navigate("/contact")}
+            onClick={handleJoinClick}
           >
             {translations[language].button}
           </motion.button>
