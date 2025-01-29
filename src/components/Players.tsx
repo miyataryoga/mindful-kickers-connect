@@ -8,16 +8,19 @@ const translations = {
     subtitle: "Learn from the Best",
     players: [
       {
+        id: "mentor1",
         name: "Undecided",
         position: "Professional Mentor",
         image: "/lovable-uploads/4bd0fa37-0c17-4100-b699-6265f4128aba.png",
       },
       {
+        id: "mentor2",
         name: "Undecided",
         position: "Guest Coach",
         image: "/lovable-uploads/4bd0fa37-0c17-4100-b699-6265f4128aba.png",
       },
       {
+        id: "mentor3",
         name: "Undecided",
         position: "Technical Advisor",
         image: "/lovable-uploads/4bd0fa37-0c17-4100-b699-6265f4128aba.png",
@@ -29,16 +32,19 @@ const translations = {
     subtitle: "最高の指導者から学ぶ",
     players: [
       {
+        id: "mentor1",
         name: "乾 貴士",
         position: "プロフェッショナルメンター",
         image: "/lovable-uploads/4bd0fa37-0c17-4100-b699-6265f4128aba.png",
       },
       {
+        id: "mentor2",
         name: "香川 真司",
         position: "ゲストコーチ",
         image: "/lovable-uploads/4bd0fa37-0c17-4100-b699-6265f4128aba.png",
       },
       {
+        id: "mentor3",
         name: "長谷部 誠",
         position: "テクニカルアドバイザー",
         image: "/lovable-uploads/4bd0fa37-0c17-4100-b699-6265f4128aba.png",
@@ -50,16 +56,19 @@ const translations = {
     subtitle: "Lernen Sie von den Besten",
     players: [
       {
+        id: "mentor1",
         name: "Takashi Inui",
         position: "Professioneller Mentor",
         image: "/lovable-uploads/4bd0fa37-0c17-4100-b699-6265f4128aba.png",
       },
       {
+        id: "mentor2",
         name: "Shinji Kagawa",
         position: "Gasttrainer",
         image: "/lovable-uploads/4bd0fa37-0c17-4100-b699-6265f4128aba.png",
       },
       {
+        id: "mentor3",
         name: "Makoto Hasebe",
         position: "Technischer Berater",
         image: "/lovable-uploads/4bd0fa37-0c17-4100-b699-6265f4128aba.png",
@@ -86,7 +95,7 @@ const Players = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {content.players.map((player, index) => (
             <motion.div
-              key={player.name}
+              key={player.id}
               initial={{ opacity: 0, scale: 0.9 }}
               whileInView={{ opacity: 1, scale: 1 }}
               transition={{ delay: index * 0.2 }}
