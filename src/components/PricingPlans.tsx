@@ -37,7 +37,7 @@ const translations = {
         name: "English Plus",
         price: "30€",
         period: "/lesson",
-        description: "Group English lessons",
+        description: "Group English lessons (Up to 10)",
         features: [
           "Group English lessons",
           "Sports-focused vocabulary",
@@ -79,7 +79,7 @@ const translations = {
         name: "英語プラス",
         price: "30€",
         period: "/レッスン",
-        description: "個別英語レッスン",
+        description: "グループ英語レッスン (最大10名)",
         features: [
           "マンツーマン英語レッスン",
           "スポーツ関連の語彙",
@@ -121,7 +121,7 @@ const translations = {
         name: "Englisch Plus",
         price: "30€",
         period: "/Unterricht",
-        description: "Individueller Englischunterricht",
+        description: "Gruppen-Englischunterricht (Bis zu 10)",
         features: [
           "Einzelunterricht in Englisch",
           "Sportzentrierter Wortschatz",
