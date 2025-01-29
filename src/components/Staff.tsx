@@ -1,6 +1,5 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
 import { Card, CardHeader, CardContent } from "@/components/ui/card";
 import { Users } from "lucide-react";
 import { useTranslation } from "@/contexts/TranslationContext";
@@ -117,17 +116,9 @@ const Staff = () => {
                   </div>
                 </CardHeader>
                 <CardContent className="p-6">
-                  <div className="flex items-center mb-4">
-                    <Avatar className="h-12 w-12 mr-4">
-                      <AvatarImage src={member.image} alt={member.name} />
-                      <AvatarFallback>
-                        {member.name.split(" ").map(n => n[0]).join("")}
-                      </AvatarFallback>
-                    </Avatar>
-                    <div>
-                      <h3 className="text-xl font-semibold">{member.name}</h3>
-                      <p className="text-muted-foreground">{member.position}</p>
-                    </div>
+                  <div className="mb-4">
+                    <h3 className="text-xl font-semibold">{member.name}</h3>
+                    <p className="text-muted-foreground">{member.position}</p>
                   </div>
                   <p className="text-muted-foreground">{member.bio}</p>
                 </CardContent>
