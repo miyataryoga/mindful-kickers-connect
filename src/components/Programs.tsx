@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { GraduationCap, Users } from "lucide-react";
+import { GraduationCap, Users, BookOpen } from "lucide-react";
 import { useTranslation } from "@/contexts/TranslationContext";
 
 const translations = {
@@ -15,6 +15,7 @@ const translations = {
       {
         title: "English Education",
         description: "Integrated English learning through sports and activities",
+        highlight: true,
       },
       {
         title: "Family Community",
@@ -33,6 +34,7 @@ const translations = {
       {
         title: "英語教育",
         description: "スポーツと活動を通じた総合的な英語学習",
+        highlight: true,
       },
       {
         title: "ファミリーコミュニティ",
@@ -51,6 +53,7 @@ const translations = {
       {
         title: "Englischunterricht",
         description: "Integriertes Englischlernen durch Sport und Aktivitäten",
+        highlight: true,
       },
       {
         title: "Familiengemeinschaft",
@@ -84,13 +87,19 @@ const Programs = () => {
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ delay: index * 0.2 }}
-              className="p-8 rounded-2xl bg-muted hover:shadow-lg transition-all duration-300"
+              className={`p-8 rounded-2xl ${
+                program.highlight
+                  ? "bg-gradient-to-br from-[#8B5CF6] to-[#D946EF] text-white hover:shadow-xl hover:shadow-purple-200"
+                  : "bg-muted hover:shadow-lg"
+              } transition-all duration-300`}
             >
               {React.createElement(programIcons[index], {
-                className: "w-12 h-12 text-primary mb-6",
+                className: `w-12 h-12 ${program.highlight ? "text-white" : "text-primary"} mb-6`,
               })}
               <h3 className="text-xl font-bold mb-4">{program.title}</h3>
-              <p className="text-muted-foreground">{program.description}</p>
+              <p className={program.highlight ? "text-white/90" : "text-muted-foreground"}>
+                {program.description}
+              </p>
             </motion.div>
           ))}
         </div>
