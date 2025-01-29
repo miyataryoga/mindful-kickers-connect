@@ -10,6 +10,7 @@ const translations = {
   en: {
     title: "Pricing Plans",
     subtitle: "Choose Your Path to Excellence",
+    moreDetails: "More Details",
     plans: [
       {
         name: "Elite Academy Program",
@@ -52,6 +53,7 @@ const translations = {
   ja: {
     title: "料金プラン",
     subtitle: "卓越への道を選択",
+    moreDetails: "詳細を見る",
     plans: [
       {
         name: "エリートアカデミープログラム",
@@ -94,6 +96,7 @@ const translations = {
   de: {
     title: "Preispläne",
     subtitle: "Wählen Sie Ihren Weg zur Exzellenz",
+    moreDetails: "Mehr Details",
     plans: [
       {
         name: "Elite-Akademie-Programm",
@@ -177,16 +180,18 @@ const PricingPlans = () => {
                       </li>
                     ))}
                   </ul>
-                  {plan.name.toLowerCase().includes("english plus") && (
+                  {plan.name.toLowerCase().includes("english plus") ||
+                   plan.name.includes("英語プラス") ||
+                   plan.name.includes("Englisch Plus") ? (
                     <div className="mt-6 text-center">
                       <Button
                         onClick={() => navigate("/english-plus")}
                         variant="outline"
                       >
-                        More Details
+                        {content.moreDetails}
                       </Button>
                     </div>
-                  )}
+                  ) : null}
                 </CardContent>
               </Card>
             </motion.div>
