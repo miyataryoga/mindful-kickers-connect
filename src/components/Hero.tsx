@@ -61,7 +61,7 @@ const Hero = () => {
           <span className="inline-block px-4 py-1 mb-4 bg-primary/10 text-black rounded-full text-sm font-medium">
             {translations[language].location}
           </span>
-          <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold mb-4 tracking-tight">
+          <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-4 tracking-tight">
             {translations[language].title}
           </h1>
           <p className="text-2xl md:text-3xl font-semibold text-primary mb-6">
