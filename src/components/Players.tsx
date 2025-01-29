@@ -10,17 +10,17 @@ const translations = {
       {
         name: "Undecided",
         position: "Professional Mentor",
-        image: "https://images.unsplash.com/photo-1519389950473-47ba0277781c",
+        image: "/lovable-uploads/4bd0fa37-0c17-4100-b699-6265f4128aba.png",
       },
       {
         name: "Undecided",
         position: "Guest Coach",
-        image: "https://images.unsplash.com/photo-1605810230434-7631ac76ec81",
+        image: "/lovable-uploads/4bd0fa37-0c17-4100-b699-6265f4128aba.png",
       },
       {
         name: "Undecided",
         position: "Technical Advisor",
-        image: "https://images.unsplash.com/photo-1517022812141-23620dba5c23",
+        image: "/lovable-uploads/4bd0fa37-0c17-4100-b699-6265f4128aba.png",
       },
     ]
   },
@@ -31,17 +31,17 @@ const translations = {
       {
         name: "乾 貴士",
         position: "プロフェッショナルメンター",
-        image: "https://images.unsplash.com/photo-1519389950473-47ba0277781c",
+        image: "/lovable-uploads/4bd0fa37-0c17-4100-b699-6265f4128aba.png",
       },
       {
         name: "香川 真司",
         position: "ゲストコーチ",
-        image: "https://images.unsplash.com/photo-1605810230434-7631ac76ec81",
+        image: "/lovable-uploads/4bd0fa37-0c17-4100-b699-6265f4128aba.png",
       },
       {
         name: "長谷部 誠",
         position: "テクニカルアドバイザー",
-        image: "https://images.unsplash.com/photo-1517022812141-23620dba5c23",
+        image: "/lovable-uploads/4bd0fa37-0c17-4100-b699-6265f4128aba.png",
       },
     ]
   },
@@ -52,17 +52,17 @@ const translations = {
       {
         name: "Takashi Inui",
         position: "Professioneller Mentor",
-        image: "https://images.unsplash.com/photo-1519389950473-47ba0277781c",
+        image: "/lovable-uploads/4bd0fa37-0c17-4100-b699-6265f4128aba.png",
       },
       {
         name: "Shinji Kagawa",
         position: "Gasttrainer",
-        image: "https://images.unsplash.com/photo-1605810230434-7631ac76ec81",
+        image: "/lovable-uploads/4bd0fa37-0c17-4100-b699-6265f4128aba.png",
       },
       {
         name: "Makoto Hasebe",
         position: "Technischer Berater",
-        image: "https://images.unsplash.com/photo-1517022812141-23620dba5c23",
+        image: "/lovable-uploads/4bd0fa37-0c17-4100-b699-6265f4128aba.png",
       },
     ]
   }
