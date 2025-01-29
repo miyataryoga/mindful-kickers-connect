@@ -1,7 +1,9 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { Check } from "lucide-react";
+import { useNavigate } from "react-router-dom";
 import { Card, CardContent, CardHeader, CardTitle } from "./ui/card";
+import { Button } from "./ui/button";
 import { useTranslation } from "@/contexts/TranslationContext";
 
 const translations = {
@@ -135,6 +137,7 @@ const translations = {
 
 const PricingPlans = () => {
   const { language } = useTranslation();
+  const navigate = useNavigate();
   const content = translations[language];
 
   return (
@@ -174,6 +177,16 @@ const PricingPlans = () => {
                       </li>
                     ))}
                   </ul>
+                  {plan.name.toLowerCase().includes("english plus") && (
+                    <div className="mt-6 text-center">
+                      <Button
+                        onClick={() => navigate("/english-plus")}
+                        variant="outline"
+                      >
+                        More Details
+                      </Button>
+                    </div>
+                  )}
                 </CardContent>
               </Card>
             </motion.div>

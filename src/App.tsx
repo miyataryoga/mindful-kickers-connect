@@ -4,6 +4,7 @@ import Index from "./pages/Index";
 import NewsPage from "./pages/News";
 import Results from "./pages/Results";
 import Contact from "./pages/Contact";
+import EnglishPlus from "./pages/EnglishPlus";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
           <Route path="/news" element={<NewsPage />} />
           <Route path="/results" element={<Results />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/english-plus" element={<EnglishPlus />} />
         </Routes>
       </TranslationProvider>
     </Router>
