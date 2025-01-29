@@ -70,6 +70,13 @@ const translations = {
 const teamResults = {
   U6: [
     {
+      opponent: "Arsenal Academy",
+      date: "2024-02-21",
+      result: "Draw",
+      score: "3-3",
+      location: "Home"
+    },
+    {
       opponent: "Barcelona Academy",
       date: "2024-01-15",
       result: "Win",
@@ -93,21 +100,28 @@ const teamResults = {
   ],
   U8: [
     {
-      opponent: "PSG Academy",
-      date: "2024-01-14",
+      opponent: "Atletico Madrid Academy",
+      date: "2024-02-18",
       result: "Win",
-      score: "4-2",
+      score: "2-0",
       location: "Away"
     },
     {
-      opponent: "Manchester City Academy",
-      date: "2024-01-21",
-      result: "Win",
-      score: "3-0",
+      opponent: "Borussia Dortmund Academy",
+      date: "2024-02-11",
+      result: "Draw",
+      score: "2-2",
       location: "Home"
     },
     {
-      opponent: "Bayern Munich Academy",
+      opponent: "AC Milan Academy",
+      date: "2024-02-04",
+      result: "Win",
+      score: "3-1",
+      location: "Away"
+    },
+    {
+      opponent: "Inter Milan Academy",
       date: "2024-01-28",
       result: "Loss",
       score: "1-2",
@@ -115,6 +129,13 @@ const teamResults = {
     }
   ],
   U10: [
+    {
+      opponent: "Leeds United Academy",
+      date: "2024-01-29",
+      result: "Draw",
+      score: "1-1",
+      location: "Home"
+    },
     {
       opponent: "Liverpool Academy",
       date: "2024-01-16",

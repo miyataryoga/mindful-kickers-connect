@@ -49,6 +49,7 @@ const teamResults: TeamResultsData = {
     { opponent: "Sporting CP Academy", result: "Loss", score: "0-1", date: "2023-11-26" }
   ],
   U10: [
+    { opponent: "Leeds United Academy", result: "Draw", score: "1-1", date: "2024-01-29" },
     { opponent: "Liverpool Academy", result: "Win", score: "2-1", date: "2024-01-16" },
     { opponent: "Chelsea Academy", result: "Win", score: "3-1", date: "2024-01-23" },
     { opponent: "Juventus Academy", result: "Win", score: "4-0", date: "2024-01-30" }
