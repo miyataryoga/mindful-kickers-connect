@@ -14,7 +14,7 @@ const translations = {
       },
       {
         title: "English Education",
-        description: "Dynamic English learning through exciting football activities and games!",
+        description: "Integrated English learning through sports and activities",
         highlight: true,
       },
       {
@@ -33,7 +33,7 @@ const translations = {
       },
       {
         title: "英語教育",
-        description: "楽しいサッカーの活動とゲームを通じてダイナミックな英語学習！",
+        description: "スポーツと活動を通じた総合的な英語学習",
         highlight: true,
       },
       {
@@ -52,7 +52,7 @@ const translations = {
       },
       {
         title: "Englischunterricht",
-        description: "Dynamisches Englischlernen durch spannende Fußballaktivitäten und Spiele!",
+        description: "Integriertes Englischlernen durch Sport und Aktivitäten",
         highlight: true,
       },
       {
