@@ -162,7 +162,11 @@ const teamResults = {
   ]
 };
 
-const TeamResults = () => {
+interface TeamResultsProps {
+  showAllResults?: boolean;
+}
+
+const TeamResults = ({ showAllResults = false }: TeamResultsProps) => {
   const [selectedGroup, setSelectedGroup] = React.useState<string>("U6");
   const { language } = useTranslation();
   const content = translations[language];
@@ -180,6 +184,13 @@ const TeamResults = () => {
       default:
         return "";
     }
+  };
+
+  const getDisplayResults = (results: typeof teamResults[keyof typeof teamResults]) => {
+    if (showAllResults) {
+      return results;
+    }
+    return results.slice(0, 3);
   };
 
   return (
@@ -211,7 +222,7 @@ const TeamResults = () => {
                   <CardHeader>
                     <div className="flex items-center gap-2">
                       <Trophy className="h-5 w-5 text-primary" />
-                      <CardTitle>{`${group} Match Results`}</CardTitle>
+                      <CardTitle>{`${group} ${showAllResults ? 'All Results' : 'Latest Results'}`}</CardTitle>
                     </div>
                   </CardHeader>
                   <CardContent>
@@ -226,7 +237,7 @@ const TeamResults = () => {
                         </TableRow>
                       </TableHeader>
                       <TableBody>
-                        {games.map((game, index) => (
+                        {getDisplayResults(games).map((game, index) => (
                           <TableRow key={index}>
                             <TableCell>{new Date(game.date).toLocaleDateString()}</TableCell>
                             <TableCell>{game.opponent}</TableCell>

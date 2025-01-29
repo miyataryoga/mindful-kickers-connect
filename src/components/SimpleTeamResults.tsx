@@ -3,21 +3,26 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Trophy, Users } from "lucide-react";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { useTranslation } from "@/contexts/TranslationContext";
+import { useNavigate } from "react-router-dom";
+import { Button } from "@/components/ui/button";
 import ResultsTable from "./team-results/ResultsTable";
 import { TeamResultsData, Translations } from "./team-results/types";
 
 const translations: Record<string, Translations> = {
   en: {
     latestResults: "Latest Results",
-    teamPerformance: "[Example] Team Performance"
+    teamPerformance: "[Example] Team Performance",
+    viewAllResults: "View All Results"
   },
   ja: {
     latestResults: "最新の結果",
-    teamPerformance: "[例] チームパフォーマンス"
+    teamPerformance: "[例] チームパフォーマンス",
+    viewAllResults: "すべての結果を見る"
   },
   de: {
     latestResults: "Neueste Ergebnisse",
-    teamPerformance: "[Beispiel] Team Leistung"
+    teamPerformance: "[Beispiel] Team Leistung",
+    viewAllResults: "Alle Ergebnisse anzeigen"
   }
 };
 
@@ -58,6 +63,11 @@ const teamResults: TeamResultsData = {
 const SimpleTeamResults = () => {
   const { language } = useTranslation();
   const content = translations[language];
+  const navigate = useNavigate();
+
+  const getLatestResults = (results: TeamResult[]) => {
+    return results.slice(0, 3);
+  };
 
   return (
     <section className="py-12 md:py-24 bg-muted">
@@ -94,12 +104,22 @@ const SimpleTeamResults = () => {
                   </div>
                 </CardHeader>
                 <CardContent>
-                  <ResultsTable results={games} />
+                  <ResultsTable results={getLatestResults(games)} />
                 </CardContent>
               </Card>
             </TabsContent>
           ))}
         </Tabs>
+
+        <div className="flex justify-center mt-8">
+          <Button 
+            onClick={() => navigate('/results')}
+            className="gap-2"
+          >
+            <Trophy className="h-4 w-4" />
+            {content.viewAllResults}
+          </Button>
+        </div>
       </div>
     </section>
   );
