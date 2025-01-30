@@ -59,7 +59,7 @@ const Hero = () => {
           className="text-center relative"
         >
           <img 
-            src="/lovable-uploads/49f0625c-f4b9-41a8-99cf-6e576f4eefe2.png"
+            src="/lovable-uploads/97aa1110-1246-46a0-9c56-ab85713b0849.png"
             alt="Toki Academy Logo"
             className="w-48 h-48 mx-auto mb-8 rounded-full object-cover"
           />
