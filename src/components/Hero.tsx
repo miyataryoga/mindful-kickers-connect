@@ -61,7 +61,7 @@ const Hero = () => {
           <img 
             src="/lovable-uploads/49f0625c-f4b9-41a8-99cf-6e576f4eefe2.png"
             alt="Toki Academy Logo"
-            className="w-48 h-48 mx-auto mb-8"
+            className="w-48 h-48 mx-auto mb-8 rounded-full object-cover"
           />
           <span className="inline-block px-4 py-1 mb-4 bg-primary/10 text-black rounded-full text-sm font-medium">
             {translations[language].location}
